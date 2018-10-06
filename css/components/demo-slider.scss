@@ -74,3 +74,31 @@
 	  color: #7b7b7b;
 	}
 }
+
+@media (max-width: 1179px) {
+  .demo-presentation {
+    display: flex;
+    flex-direction: column;
+    // margin: 0 auto; ДОДЕЛАТЬ
+  }
+}
+
+@media (min-width: 1180px) {
+  .demo-presentation {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.system {
+	width: 300px;
+  height: 228px;
+  font-size: 28px;
+  font-weight: 200;
+  // font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  color: #ffffff;
+}
