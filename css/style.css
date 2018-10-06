@@ -401,16 +401,13 @@ input {
   text-align: center; }
 
 @media (max-width: 1179px) {
-  .case-container {
-    width: 260px; } }
-
-@media (min-width: 1180px) {
-  .case-container {
-    width: 1020px; } }
-
-@media (max-width: 1179px) {
   .case-presentation {
-    display: none; } }
+    display: none; }
+  .case-container {
+    width: 260px; }
+  .logo__case-slider {
+    width: 100px;
+    margin: 0 auto; } }
 
 @media (min-width: 1180px) {
   .case-presentation {
@@ -422,7 +419,10 @@ input {
       margin-top: 50px;
       background-color: #7b7b7b; }
   .case-container {
-    width: 1020px; } }
+    width: 1020px; }
+  .logo__case-slider {
+    width: 200px;
+    margin: 50px auto; } }
 
 .case-description {
   width: 600px;
@@ -453,9 +453,68 @@ input {
   background-image: linear-gradient(315deg, #000000, #ffffff); }
 
 .threeLayersIllustration:after {
-  top: 590px;
+  top: 550px;
   left: 1100px;
   border: solid 2px #979797; }
+
+.switchers__case-slider {
+  margin: 0 auto;
+  width: 70px;
+  display: flex;
+  justify-content: space-between; }
+  .switchers__case-slider .switch__case {
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 50%; }
+    .switchers__case-slider .switch__case_active {
+      background-color: #6699ff; }
+
+.slide {
+  margin: 0 auto;
+  width: 840px;
+  font-size: 40px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff; }
+
+.honors {
+  margin-top: 70px;
+  text-align: center; }
+
+.text-honours {
+  margin: 0 auto;
+  font-size: 40px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #efac56; }
+
+.banks-logos {
+  margin-top: 82px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto; }
+
+.link-honors {
+  margin-top: 66px; }
+  .link-honors a {
+    opacity: 0.5;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff; }
 
 .threeLayersIllustration {
   position: relative; }
@@ -467,7 +526,7 @@ input {
     max-width: 1280px;
     text-align: center;
     background-position: center;
-    min-height: 800px;
+    min-height: 700px;
     display: flex;
     justify-content: center;
     align-items: center; }
