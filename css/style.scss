@@ -55,17 +55,25 @@ body {
 	justify-content: space-between;
 }
 
-.language {
-	font-family: $TT;
-  font-size: 14px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #7b7b7b;
-  padding-left: 18px;
+@media (max-width: 1179px) {
+  .language {
+    display: none;
+  }
+}
+
+@media (min-width: 1180px) {
+  .language {
+    font-family: $TT;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #7b7b7b;
+    padding-left: 18px;
+  }
 }
 
 .menu {
@@ -240,19 +248,37 @@ input {
   border-radius: 6px;
 }
 
-.site-information {
-  transform: rotate(-90deg) translateX(-155px) translateY(140px);
-  width: 300px;
-  height: 28px;
-  font-size: 14px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #7b7b7b;
-  vertical-align: bottom;
+@media (max-width: 1179px) {
+  .site-information {
+    margin: 12px auto 20px;
+    width: 200px;
+    // height: 19px;
+    font-family: TTNorms;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #7b7b7b;
+  }
+}
+
+@media (min-width: 1180px) {
+  .site-information {
+    transform: rotate(-90deg) translateX(-155px) translateY(140px);
+    width: 300px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #7b7b7b;
+  }
 }
 
 @import "components/logo-slider";
