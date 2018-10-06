@@ -11,6 +11,10 @@ body {
   background-image: linear-gradient(299deg, #000000, #2d2a2e);
 }
 
+a {
+  text-decoration: none;
+}
+
 .navigation {
 	// height: 720px;
 	width: 1280px;
@@ -245,7 +249,7 @@ input {
   margin-top: 120px;
   border: 0px;
   outline: none;
-  border-radius: 6px;
+  border-radius: 7px;
 }
 
 @media (max-width: 1179px) {
@@ -283,3 +287,5 @@ input {
 
 @import "components/logo-slider";
 @import "components/demo-slider";
+@import "components/case-slider";
+@import "components/threeLayersIllustration";

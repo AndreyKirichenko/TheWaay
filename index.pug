@@ -1,71 +1,8 @@
 hmtl
-	title The Waay
-	link(href="fonts/stylesheet.css" rel="stylesheet")
-	link(rel='stylesheet' href='css/style.css')
-	meta(name="viewport" content="width=device-width")
-	body
-		header
-			nav.navigation
-				.container
-					.main-nav
-						.logo-group
-							.logo__image
-								img(src="img/l.png" width="82" height="32" alt="logo")
-							.language rus
-						.menu
-							.enter 
-								a(href="#") Войти
-							.burger-menu
-								.burger-menu__image
-					.form-information
-						.manager-information Заполните форму и мы отправим вам подробную информацию, расскажем про особенности методологии и поможем прикинуть бизнес-кейс
-							img(src="img/i.jpg" width="40" height="40" alt="man")
-							.line-image
-								img(src="img/line.svg" width="16" height="16" alt="line")
-						form(method='POST' action='#')
-							div.form-group
-								label(for='name')
-								input#name.form-control(type='text', placeholder='Владимир' name='name')
-							div.form-group
-								label(for='surname')
-								input#name.form-control(type='text', placeholder='101 codes' name='surname')
-							div.form-group
-								label(for='phone')
-								input#phone.form-control(type='text', placeholder='Телефон' name='phone')
-							div.form-group
-								label(for='email')
-								input#email.form-control(type='email', placeholder='Эл.почта' name='email')
-							button.contacts__button(type='submit') Демо доступ
-						.site-information The Waay. Demo version v1
-			.logo-slider
-				.container
-					.logo-slider__image
-						img(src="img/l.svg" width="295" height="117" alt="main-logo")
-			.demo-slider 
-				.container.demo-container
-					.main-nav
-						.logo-group
-							.logo__image
-								img(src="img/l.png" width="82" height="32" alt="logo")
-							.language rus
-						.menu
-							.enter.enter-demo 
-								a(href="#") Демо
-							.enter.enter-access
-								a(href="#") Войти
-							.burger-menu
-								.burger-menu__image
-									.burger-description Весь сайт и контакты
-					.demo-presentation
-						.switchers
-						.system Система персонали-зации отношений Банка с клиентами, которую вы можете начать использовать прямо сейчас
-						.video-lauhch
-							img(src="img/mobile.png" width="439" height="708" alt="mobile")
-						.site-information The Waay. Demo version v1
-					.demo-description
-						.news
-
-						.demo-links
-							button.contacts__button(type='submit') Демо доступ
-							p или
-							a(href="#") Подробное описание
+  head
+    include components/_meta_head
+  body
+    include components/_navigation
+    include components/_logo_slider
+    include components/_demo_slider
+    include components/_case_slider

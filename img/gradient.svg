@@ -1,0 +1,14 @@
+
+<svg width="1214px" height="800px" viewBox="0 0 1214 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" gradientTransform="translate(0.500000,0.500000),scale(0.625000,1.000000),rotate(90.000000),scale(1.000000,1.517053),translate(-0.500000,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#004EEA" offset="0%"></stop>
+            <stop stop-color="#004EEA" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.300000012">
+        <g id="Desktop" transform="translate(-33.000000, -3742.000000)" fill="url(#radialGradient-1)" fill-rule="nonzero">
+            <ellipse id="Oval" cx="640" cy="4142" rx="640" ry="400"></ellipse>
+        </g>
+    </g>
+</svg>

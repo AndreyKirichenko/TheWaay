@@ -9,12 +9,77 @@
 	],
 "creatorBuild": "26680",
 "files": {
+	"\/.editorconfig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.editorconfig",
+		"oF": 0
+		},
 	"\/build\/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/build\/.gitignore",
 		"oF": 0
+		},
+	"\/components\/_case_slider.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/components\/_case_slider.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/components\/_demo_slider.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/components\/_demo_slider.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/components\/_logo_slider.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/components\/_logo_slider.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/components\/_meta_head.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/components\/_meta_head.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/components\/_navigation.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/components\/_navigation.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/css\/components\/case-slider.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/components\/case-slider.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"\/css\/components\/demo-slider.scss": {
 		"aP": 0,
@@ -42,6 +107,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/css\/components\/threeLayersIllustration.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/components\/threeLayersIllustration.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/css\/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -61,6 +139,19 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/untitled.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/untitled.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -340,8 +431,8 @@
 		"oA": 0,
 		"oAP": "\/img\/1.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -421,6 +512,16 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/img\/gradient.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/gradient.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/img\/i.jpg": {
 		"ft": 16384,
@@ -568,17 +669,6 @@
 		"iS": 1119,
 		"oA": 0,
 		"oAP": "\/img\/vtb-lobo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/img\/W_Web_3.png": {
-		"ft": 32768,
-		"iS": 321672,
-		"oA": 0,
-		"oAP": "\/img\/W_Web_3.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
