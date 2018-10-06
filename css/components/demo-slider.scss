@@ -1,0 +1,76 @@
+.demo-slider {
+	opacity: 0.9;
+  background-image: linear-gradient(312deg, #000000, #2d2a2e);
+}
+
+.demo-container {
+	height: 1140px;
+}
+
+.enter-demo,
+.burger-description {
+	display: none;
+}
+
+.burger-menu__image {
+  &:before,
+  &:after {
+  	display: none;
+  }
+}
+
+@media (max-width: 1179px) {
+  .form-information {
+    display: flex;
+    flex-direction: column;
+    // margin: 0 auto; ДОДЕЛАТЬ
+  }
+}
+
+@media (min-width: 1180px) {
+  .enter-access a {
+		background-color: #7b7b7b;
+	}
+	.enter-demo {
+		display: block;
+		margin-right: 40px;
+	}
+	.burger-menu__image {
+		position: relative;
+    &:before,
+    &:after {
+    	display: block;
+      position: absolute;
+      content: "";
+      top: 85px;
+      right: 40px;
+      width: 2px;
+		  height: 10px;
+		  background-color: #7b7b7b;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+	}
+	.burger-description {
+		// js код на закрытие - открытие ДОДЕЛАТЬ
+		position: absolute;
+		top: 45px;
+    left: -85px;
+		width: 72px;
+		height: 55px;
+		cursor: pointer;
+		display: block;
+		font-size: 14px;
+	  font-weight: 500;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: normal;
+	  letter-spacing: normal;
+	  text-align: right;
+	  color: #7b7b7b;
+	}
+}

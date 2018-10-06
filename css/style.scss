@@ -1,0 +1,236 @@
+$TT: 'TT Norms', sans-serif;
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: $TT;
+  opacity: 0.9;
+  background-image: linear-gradient(299deg, #000000, #2d2a2e);
+}
+
+.navigation {
+	// height: 720px;
+	width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+	background-image: url(../img/main-blur.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.9;
+  background-image: linear-gradient(299deg, #000000, #2d2a2e);
+}
+
+.container {
+	margin: 0 auto;
+	text-align: center;
+}
+
+@media (max-width: 1179px) {
+	.container {
+		width: 260px;
+	}
+}
+
+@media (min-width: 1180px) {
+	.container {
+		width: 1020px;
+    height: 720px;
+	}
+}
+
+.main-nav {
+	display: flex;
+	justify-content: space-between;
+	// margin-top: 40px;
+  padding-top: 40px;
+  // margin-bottom: 80px; ДОДЕЛАТЬ
+  padding-bottom: 80px;
+}
+
+.logo-group {
+	display: flex;
+	justify-content: space-between;
+}
+
+.language {
+	font-family: $TT;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #7b7b7b;
+  padding-left: 18px;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+.enter {
+  margin-top: 5px;
+}
+
+.enter a {
+	font-family: $TT;
+	text-decoration: none;
+	width: 60px;
+  height: 28px;
+  background-color: #efac56;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 7px 9.5px 6px;
+  border-radius: 9px;
+}
+
+.burger-menu {
+	height: 30px;
+	padding-left: 20px;
+	cursor: pointer;
+}
+
+.burger-menu__image {
+  width: 20px;
+  height: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 12px 0px #ffffff,
+              0 24px 0px #ffffff;
+}
+
+@media (max-width: 1179px) {
+  .form-information {
+    display: flex;
+    flex-direction: column;
+    // margin: 0 auto; ДОДЕЛАТЬ
+  }
+}
+
+@media (min-width: 1180px) {
+  .form-information {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.manager-information {
+	width: 157px;
+  font-family: $TT;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  padding-top: 223px;
+  margin-right: 200px;
+  text-align: left;
+}
+
+@media (min-width: 1180px) {
+  .form-information {
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      top: -20px;
+      left: 145px;
+      width: 64px;
+      height: 64px;
+      opacity: 0.5;
+      border: solid 2px #ffffff;
+      border-radius: 50%;
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      top: 295px;
+      right: 0px;
+      width: 120px;
+      height: 120px;
+      background-image: linear-gradient(45deg, #efac56, #d65718);
+      border-radius: 50%;
+    }
+  }
+}
+
+// .manager-information img
+
+input {
+  outline: none;
+  border: 0; 
+}
+
+.form-group {
+  width: 488px;
+  height: 58px;
+  margin-bottom: 20px;
+  border: solid 1px rgba(255, 255, 255, 0.8);
+  border-radius: 13px;
+  // background-color: #d8d8d8;
+}
+
+.form-group:hover {
+  outline: solid 1px #ffffff;
+}
+
+.form-control {
+  font-family: $TT;
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #d8d8d8;
+  background-color: transparent;
+  padding-top: 13px;
+}
+
+.contacts__button {
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #efac56;
+  padding: 6px 56px 11px;
+  margin-top: 120px;
+  border: 0px;
+  outline: none;
+  border-radius: 6px;
+}
+
+.site-information {
+  transform: rotate(-90deg) translateX(-155px) translateY(140px);
+  height: 28px;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #7b7b7b;
+  vertical-align: bottom;
+}
+
+@import "components/logo-slider";
+@import "components/demo-slider";
