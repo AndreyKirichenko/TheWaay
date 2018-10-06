@@ -125,7 +125,7 @@ body {
 }
 
 .manager-information {
-	width: 157px;
+	width: 180px;
   font-family: $TT;
   font-size: 18px;
   font-weight: normal;
@@ -165,8 +165,30 @@ body {
     }
   }
 }
+@media (max-width: 1179px) {
+  .manager-information img,
+  .line-image  {
+    display: none;
+  }
+}
 
-// .manager-information img
+@media (min-width: 1180px) {
+  .manager-information img  {
+    display: block;
+    border-radius: 50%;
+    margin-top: 20px;
+    
+  }
+  .manager-information {
+    position: relative;
+  }
+
+  .line-image {
+    position: absolute;
+    bottom: 43px;
+    left: 33px;
+  }
+}
 
 input {
   outline: none;
@@ -220,6 +242,7 @@ input {
 
 .site-information {
   transform: rotate(-90deg) translateX(-155px) translateY(140px);
+  width: 300px;
   height: 28px;
   font-size: 14px;
   font-weight: 500;
