@@ -22,12 +22,17 @@
       img(src="img/1.png" width="678" height="auto" alt="circles")
 
   .threeLayersIllustration
-    .threeLayersIllustration__overlay
-      img(src="img/3-layers.png" width="780" height="531" alt="layers")
-  .switchers__case-slider
-    .switch__case.switch__case_active
-    .switch__case
-    .switch__case
+    .threeLayersIllustration__overlay.owl-carousel.owl-carousel--centeredImages
+      .owl-carousel__slide
+        img(src="img/3-layers.png" width="780" height="531" alt="layers")
+      .owl-carousel__slide
+        img(src="img/3-layers.png" width="780" height="531" alt="layers")
+      .owl-carousel__slide
+        img(src="img/3-layers.png" width="780" height="531" alt="layers")
+  .switchers__case-slider.owl-carousel--centeredImages__dots
+    //- .switch__case.switch__case_active
+    //- .switch__case
+    //- .switch__case
   .logo__case-slider
     img(src="img/logo-white.svg" width="200" height="auto" alt="logo")
   .slides__case-slider

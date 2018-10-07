@@ -68,6 +68,15 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/components\/_products_cases.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/components\/_products_cases.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/components\/_projects.pug": {
 		"cB": 0,
 		"cOD": 1,
@@ -112,6 +121,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/components\/logo-slider.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/components\/owl.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/components\/owl.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -491,6 +513,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/bank-o.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/bank-o.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/bbva-logo.png": {
 		"ft": 32768,
 		"iS": 1772,
@@ -523,6 +555,16 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/img\/credit-bank.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/credit-bank.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/img\/finnopolis-logo.png": {
 		"ft": 32768,
@@ -685,6 +727,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/spb-bank.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/spb-bank.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/vei-logo.png": {
 		"ft": 32768,
 		"iS": 455,
@@ -696,16 +748,26 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/vtb-lobo.png": {
+	"\/img\/vtb-bank.png": {
 		"ft": 32768,
 		"iS": 1119,
 		"oA": 0,
-		"oAP": "\/img\/vtb-lobo.png",
+		"oAP": "\/img\/vtb-bank.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/img\/vtb-bank.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/vtb-bank.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/index.html": {
 		"cB": 0,
@@ -722,6 +784,16 @@
 		"oAP": "\/index.html",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/javascript\/index.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/javascript\/index-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		}
 	},
 "hooks": [

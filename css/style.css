@@ -462,12 +462,15 @@ input {
   width: 70px;
   display: flex;
   justify-content: space-between; }
-  .switchers__case-slider .switch__case {
+  .switchers__case-slider .switch__case,
+  .switchers__case-slider .owl-dot {
     width: 8px;
     height: 8px;
     background-color: #ffffff;
     border-radius: 50%; }
-    .switchers__case-slider .switch__case_active {
+    .switchers__case-slider .switch__case_active, .switchers__case-slider .switch__case.active,
+    .switchers__case-slider .owl-dot_active,
+    .switchers__case-slider .owl-dot.active {
       background-color: #6699ff; }
 
 .slide {
@@ -602,3 +605,7 @@ input {
   border-radius: 7px; }
   .links__button a {
     color: #ffffff; }
+
+.owl-carousel--centeredImages .owl-item img {
+  width: auto !important;
+  margin: auto; }

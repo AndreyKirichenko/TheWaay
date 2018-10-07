@@ -5,6 +5,11 @@
     <link href="fonts/stylesheet.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css"/>
     <meta name="viewport" content="width=device-width"/>
+    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js" defer="defer"></script>
+    <script src="https://unpkg.com/owl-carousel-2@0.0.3/owl.carousel.min.js" defer="defer"> </script>
+    <link rel="stylesheet" href="https://unpkg.com/owl-carousel-2@0.0.3/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/owl-carousel-2@0.0.3/assets/owl.theme.default.min.css"/>
+    <script src="/javascript/index.js" defer="defer"></script>
   </head>
   <body>
     <nav class="navigation">
@@ -113,13 +118,13 @@
         <div class="circles-image"><img src="img/1.png" width="678" height="auto" alt="circles"/></div>
       </div>
       <div class="threeLayersIllustration">
-        <div class="threeLayersIllustration__overlay"><img src="img/3-layers.png" width="780" height="531" alt="layers"/></div>
+        <div class="threeLayersIllustration__overlay owl-carousel owl-carousel--centeredImages">
+          <div class="owl-carousel__slide"><img src="img/3-layers.png" width="780" height="531" alt="layers"/></div>
+          <div class="owl-carousel__slide"><img src="img/3-layers.png" width="780" height="531" alt="layers"/></div>
+          <div class="owl-carousel__slide"><img src="img/3-layers.png" width="780" height="531" alt="layers"/></div>
+        </div>
       </div>
-      <div class="switchers__case-slider">
-        <div class="switch__case switch__case_active"></div>
-        <div class="switch__case"></div>
-        <div class="switch__case"></div>
-      </div>
+      <div class="switchers__case-slider owl-carousel--centeredImages__dots"></div>
       <div class="logo__case-slider"><img src="img/logo-white.svg" width="200" height="auto" alt="logo"/></div>
       <div class="slides__case-slider">
         <div class="slide">Мы помогаем банкам быть понятными, полезными и интересными для своих клиентов для того, чтобы продавать больше продуктов на одного клиента, увеличивая</div>
@@ -139,24 +144,29 @@
           <div class="logo-project_item"><img src="img/sber-bank.png" width="64.1" height="60" alt="sber-bank"/>
             <div class="logo-project_text">Сбербанк</div>
           </div>
-          <div class="logo-project_item"><img src="img/sber-bank.png" width="64.1" height="60" alt="sber-bank"/>
-            <div class="logo-project_text">Сбербанк</div>
+          <div class="logo-project_item"><img src="img/spb-bank.svg" width="35" height="60" alt="spb-bank"/>
+            <div class="logo-project_text">Банк Санкт-Петербург</div>
           </div>
-          <div class="logo-project_item"><img src="img/sber-bank.png" width="64.1" height="60" alt="sber-bank"/>
-            <div class="logo-project_text">Сбербанк</div>
+          <div class="logo-project_item"><img src="img/vtb-bank.svg" width="109" height="39" alt="vtb-bank"/>
+            <div class="logo-project_text">ВТБ Страхование</div>
           </div>
-          <div class="logo-project_item"><img src="img/sber-bank.png" width="64.1" height="60" alt="sber-bank"/>
-            <div class="logo-project_text">Сбербанк</div>
+          <div class="logo-project_item"><img src="img/rf-bank.png" width="63" height="60" alt="rf-bank"/>
+            <div class="logo-project_text">РайффайзенБанк</div>
           </div>
-          <div class="logo-project_item"><img src="img/sber-bank.png" width="64.1" height="60" alt="sber-bank"/>
-            <div class="logo-project_text">Сбербанк</div>
+          <div class="logo-project_item"><img src="img/credit-bank.svg" width="60" height="60" alt="sber-bank"/>
+            <div class="logo-project_text">Credit Europe Bank</div>
           </div>
-          <div class="logo-project_item"><img src="img/sber-bank.png" width="64.1" height="60" alt="sber-bank"/>
-            <div class="logo-project_text">Сбербанк</div>
+          <div class="logo-project_item"><img src="img/bank-o.svg" width="60" height="60" alt="otkrytie-bank"/>
+            <div class="logo-project_text">БанкОткрытие</div>
           </div>
         </div>
         <div class="conclusion">10 000 000 клиентов проанализировано</div>
         <div class="links__button"><a href="#">Подробнее о кейсах</a></div>
+      </div>
+    </div>
+    <div class="products_cases">
+      <div class="container-products_cases">
+        <div class="title-projects">Кейсы <span>ВТБ Стахование, Банк Санкт-Петербург, Кредит Европа Банк</span></div>
       </div>
     </div>
   </body>

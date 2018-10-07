@@ -84,14 +84,17 @@
 .switchers__case-slider {
   margin: 0 auto;
   width: 70px;
-    display: flex;
-    justify-content: space-between;
-  .switch__case {
+  display: flex;
+  justify-content: space-between;
+
+  .switch__case, 
+  .owl-dot {
     width: 8px;
     height: 8px;
     background-color: #ffffff;
     border-radius: 50%;
-    &_active {
+    &_active,
+    &.active {
       background-color: #6699ff;
     }
   }
