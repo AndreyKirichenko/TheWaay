@@ -331,11 +331,19 @@ input {
     margin-top: 100px; }
     .demo-presentation button {
       display: none; }
-  .switchers {
-    background-color: #fff;
+  .switchers__demo {
     width: 100px;
     height: 400px;
+    margin-top: 300px;
     margin-right: 50px; }
+  .switch__demo {
+    width: 8px;
+    height: 8px;
+    margin-bottom: 18px;
+    background-color: #ffffff;
+    border-radius: 50%; }
+    .switch__demo_active {
+      background-color: #efac56; }
   .video-lauhch img {
     display: block;
     z-index: 1; }
@@ -344,7 +352,7 @@ input {
     width: 415px;
     height: 228px;
     font-size: 28px;
-    font-weight: 200;
+    font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.36;
