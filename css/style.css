@@ -498,10 +498,11 @@ input {
   color: #efac56; }
 
 .banks-logos {
-  margin-top: 82px;
+  margin: 82px auto 0px;
   display: flex;
   align-items: center;
-  margin: 0 auto; }
+  width: 500px;
+  justify-content: space-between; }
 
 .link-honors {
   margin-top: 66px; }
