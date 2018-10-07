@@ -68,6 +68,15 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/components\/_projects.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/components\/_projects.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/css\/components\/case-slider.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -103,6 +112,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/components\/logo-slider.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/components\/projects.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/components\/projects.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
