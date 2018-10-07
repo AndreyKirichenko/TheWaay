@@ -74,21 +74,23 @@
 	}
 }
 
-.video-launch {
-	width: 120px;
-  height: 120px;
-  background-color: #efac56;
-  z-index: 2;
-}
-
 @media (max-width: 1179px) {
   .demo-presentation {
     display: flex;
     flex-direction: column;
     // margin: 0 auto; ДОДЕЛАТЬ
   }
+
+  .video-launch img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .mobile {
+    display: none;
+  }
+
   .switchers,
-  .video-lauhch img,
   .demo-links a,
   .demo-links p {
   	display: none;
@@ -120,9 +122,20 @@
     	display: none;
     }
   }
+
+  .video-launch {
+    position: relative;
+  }
+
+  .mobile {
+    position: absolute;
+    bottom: 210px;
+    right: -118px;
+    z-index: -1;
+    display: block;
+  }
+
   .switchers__demo {
-  	// background-color: #fff;
-  	width: 100px;
   	height: 400px;
     margin-top: 300px;
   	margin-right: 50px;
@@ -139,10 +152,6 @@
     }
   }
 
-  .video-lauhch img {
-  	display: block;
-  	z-index: 1;
-  }
   .system {
 		margin-top: 100px;
 		width: 415px;
