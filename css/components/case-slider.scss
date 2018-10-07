@@ -39,9 +39,27 @@
   .logo__case-slider {
     width: 200px;
     margin: 50px auto;
-    // margin-top: 50px;
   }
 }
+
+// ПЕРВЫЙ СЛАЙДЕР - ИНПУТЫ
+
+.switchers__case {
+    height: 400px;
+    margin-top: 170px;
+    margin-right: 50px;
+  }
+  
+  .switch__case {
+    width: 8px;
+    height: 8px;
+    margin-bottom: 18px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    &_active {
+      background-color: #efac56;
+    }
+  }
 
 .case-description {
 	width: 600px;
@@ -81,6 +99,9 @@
     border: solid 2px #979797;
   }
 }
+
+// ВТОРОЙ СЛАЙДЕР
+
 .switchers__case-slider {
   margin: 0 auto;
   width: 70px;
@@ -98,10 +119,6 @@
       background-color: #6699ff;
     }
   }
-}
-
-.slides__case-slider {
-
 }
 
 .slide {

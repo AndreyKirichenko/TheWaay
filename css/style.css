@@ -432,6 +432,20 @@ input {
     width: 200px;
     margin: 50px auto; } }
 
+.switchers__case {
+  height: 400px;
+  margin-top: 170px;
+  margin-right: 50px; }
+
+.switch__case {
+  width: 8px;
+  height: 8px;
+  margin-bottom: 18px;
+  background-color: #ffffff;
+  border-radius: 50%; }
+  .switch__case_active {
+    background-color: #efac56; }
+
 .case-description {
   width: 600px;
   font-size: 20px;
