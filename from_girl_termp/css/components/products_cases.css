@@ -1,0 +1,16 @@
+.container-products_cases {
+  width: 1280px;
+  height: 3250px;
+  background-image: linear-gradient(339deg, #000511, #2d2a2e); }
+
+.title-products {
+  width: 690px; }
+  .title-products span {
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff; }

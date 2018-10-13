@@ -1,0 +1,110 @@
+.footer {
+  background-color: #272527;
+  background-image: linear-gradient(135deg, #2d2a2e, #000511);
+  min-height: 480px;
+  overflow: hidden;
+
+  @media screen and (min-width: 1280px) {
+    min-height: 720px;
+  }
+}
+
+.footer__content {
+  box-sizing: border-box;
+  padding-bottom: 40px;
+  padding-top: 30px;
+
+  @media screen and (min-width: 1280px) {
+    display: grid;
+    grid-template:
+        'lg . .'
+        'txt cntcts lnks'
+        'soc cntcts lnks'
+        'sbscrb btn hint';
+    grid-template-columns: minmax(415px, auto) minmax(365px, auto) minmax(340px, auto);
+    padding-bottom: 40px;
+    padding-top: 80px;
+    width: 100%;
+  }
+}
+
+.footer__logo {
+  height: 54px;
+  color: #EFAC56;
+
+  margin: 0 auto 60px;
+  width: 137px;
+
+  @media screen and (min-width: 1280px) {
+    grid-area: lg;
+    height: 108px;
+    margin-bottom: 140px;
+    margin-left: 0;
+    width: 274px;
+  }
+}
+
+.footer__text {
+  color: #fff;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 0 auto 20px;
+  max-width: 200px;
+  text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    grid-area: txt;
+    font-size: 28px;
+    line-height: 38px;
+    margin-left: 0;
+    max-width: 320px;
+    text-align: left;
+  }
+}
+
+.footer__contacts {
+  margin-bottom: 45px;
+  @media screen and (min-width: 1280px) {
+    grid-area: cntcts;
+    margin-bottom: 0;
+    max-width: 290px;
+  }
+}
+
+.footer__button {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 1280px) {
+    grid-area: btn;
+  }
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+
+  @media screen and (min-width: 1280px) {
+    grid-area: soc;
+    justify-content: left;
+  }
+}
+
+.footer__links {
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    grid-area: lnks;
+    justify-content: space-between;
+  }
+}
+
+.footer__subscribe {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1280px) {
+    grid-area: sbscrb;
+  }
+}

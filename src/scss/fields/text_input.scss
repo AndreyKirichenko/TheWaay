@@ -1,0 +1,28 @@
+.textInput {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #D8D8D8;
+  font-size: 14px;
+  font-weight: 300;
+  height: 40px;
+  line-height: 1em;
+  margin-bottom: 10px;
+  padding: 0 8px;
+  text-align: center;
+  width: 100%;
+
+  &:focus {
+    border-color: #fff;
+  }
+
+  &::placeholder {
+    color: #7b7b7b;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 22px;
+    height: 60px;
+  }
+}

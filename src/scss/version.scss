@@ -1,0 +1,10 @@
+.version {
+  color: #7B7B7B;
+  display: inline-block;
+  font-size: 8px;
+  line-height: 1em;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+  }
+}

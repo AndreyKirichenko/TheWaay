@@ -1,0 +1,22 @@
+.footerLinks {
+
+}
+
+.footerLinks__item {
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 20px;
+    width: 160px;
+  }
+}
+
+.footerLinks__link {
+  color: #EFAC56;
+  font-size: 10px;
+  line-height: 12px;
+  text-decoration: none;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}

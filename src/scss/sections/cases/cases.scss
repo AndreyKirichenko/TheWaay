@@ -1,0 +1,141 @@
+.cases {
+  background-color: #000511;
+  background-image: linear-gradient(160deg, #2d2a2e, #000511);
+  min-height: 2400px;
+  position: relative;
+
+  @media screen and (min-width: 1280px) {
+    min-height: 3250px;
+  }
+
+  &:before {
+    background-image: url('/img/cases.png');
+    background-position: 50% 135px;
+    background-repeat: no-repeat;
+    background-size: 774px;
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+
+    @media (min-device-pixel-ratio: 2) {
+      background-image: url('/img/cases_x2.png');
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-position: 55% 270px;
+      background-size: 1547px;
+    }
+  }
+}
+
+.cases__content {
+  margin-top: 40px;
+  z-index: 1;
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 80px;
+  }
+}
+
+.cases__title {
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+    max-width: 620px;
+  }
+}
+
+.cases__list {
+  display: block;
+  text-align: center;
+  margin: 0 auto 440px;
+  max-width: 690px;
+
+  @media screen and (min-width: 1280px) {
+    margin: 0 auto 956px;
+  }
+}
+
+.cases__item {
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 19px;
+
+  &:after {
+    content: ',\00a0 ';
+  }
+
+  &:last-child:after {
+    content: '';
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.cases__theWaay {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+.cases__theWaayLogo {
+  color: #fff;
+  height: 36px;
+  width: 91px;
+
+  @media screen and (min-width: 1280px) {
+    height: 72px;
+    width: 182px;
+  }
+}
+
+.cases__subtitle {
+  color: #EFAC56;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 32px;
+  }
+}
+
+.cases__articles {
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 160px;
+  }
+}
+
+.cases__articleList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 80px;
+  }
+}
+
+.cases__articleItem {
+  flex-basis: 120px;
+  width: 120px;
+
+  @media screen and (min-width: 1280px) {
+    flex-basis: 290px;
+    width: 290px;
+  }
+}

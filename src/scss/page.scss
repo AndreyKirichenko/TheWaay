@@ -1,0 +1,41 @@
+.page {
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.page__header {
+  position: fixed;
+  z-index: 8;
+}
+
+.page__menu {
+  position: fixed;
+  overflow: hidden;
+  transform: translateX(-100%);
+  z-index: 7;
+}
+
+.page__menu--active {
+  transform: translateX(0%);
+}
+
+.page__section {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.page__content {
+  box-sizing: border-box;
+  max-width: 1280px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}

@@ -1,0 +1,36 @@
+@import "variables";
+@import "reset";
+@import "fonts";
+
+@import "svg";
+@import "common";
+
+@import "typography/title";
+//@import "typography/subtitle";
+//@import "typography/link";
+
+@import "fields/form";
+@import "fields/button";
+@import "fields/text_input";
+
+@import "hint";
+@import "version";
+
+@import "page";
+
+@import "sections/header/header";
+@import "sections/menu/menu";
+@import "sections/menu/navigation";
+
+@import "sections/home";
+@import "sections/section2";
+@import "sections/section3";
+@import "sections/section4";
+@import "sections/top_banks";
+@import "sections/cases/cases";
+@import "sections/cases/cases_article";
+@import "sections/links";
+@import "sections/footer/footer";
+@import "sections/footer/footer_socials";
+@import "sections/footer/footer_contacts";
+@import "sections/footer/footer_links";

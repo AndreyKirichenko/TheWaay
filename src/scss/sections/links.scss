@@ -1,0 +1,24 @@
+.links {
+  background-color: #fff;
+
+  min-height: 1600px;
+  overflow: hidden;
+
+  @media screen and (min-width: 1280px) {
+    min-height: 1260px;
+  }
+}
+
+.links__content {
+  padding-bottom: 55px;
+  padding-top: 40px;
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 132px;
+    padding-top: 80px;
+  }
+}
+
+.links__title {
+  color: #000;
+}

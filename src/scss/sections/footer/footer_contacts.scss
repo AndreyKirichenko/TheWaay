@@ -1,0 +1,39 @@
+.footerContacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media screen and (min-width: 1280px) {
+
+  }
+}
+
+.footerContacts__item {
+  flex-basis: 120px;
+
+  @media screen and (min-width: 1280px) {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.footerContacts__title {
+  color: #EFAC56;
+  font-size: 10px;
+  line-height: 12px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+.footerContacts__text {
+  color: #fff;
+  font-size: 10px;
+  line-height: 12px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}

@@ -1,0 +1,42 @@
+.hint {
+  position: relative;
+  max-width: 200px;
+}
+
+.hint__text {
+  color: #fff;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left;
+  }
+}
+
+.hint__line {
+  bottom: 40px;
+  display: none;
+  height: 17px;
+  left: 40px;
+  position: absolute;
+  width: 17px;
+}
+
+.hint__speaker {
+  background-image: url('/img/speaker.png');
+  background-size: cover;
+  display: none;
+  height: 40px;
+  margin-top: 40px;
+  width: 40px;
+}
+
+.hint__line,
+.hint__speaker {
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+}
