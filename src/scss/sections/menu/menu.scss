@@ -1,13 +1,30 @@
 .menu {
-  align-items: center;
   background-color: #000;
+  width: 100%;
+}
+
+.menu__content {
+  align-items: center;
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: center;
+  position: relative;
   width: 100%;
 }
 
 .menu__navigation {
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 100px;
+  }
+}
 
+.menu__subscribe {
+  display: none;
+  bottom: 40px;
+  width: 240px;
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
 }

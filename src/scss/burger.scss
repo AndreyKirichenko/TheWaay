@@ -1,0 +1,77 @@
+.burger {
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  margin-left: 20px;
+  padding: 0;
+  width: 20px;
+
+  @media screen and (min-width: 1280px) {
+    height: 28px;
+    width: 28px;
+  }
+}
+
+.burger__iconMobile {
+  display: none;
+  color: #fff;
+  height: 18px;
+  width: 23px;
+}
+
+.burger__icon {
+  color: #fff;
+  display: none;
+  height: 20px;
+  width: 25px;
+}
+
+.burger__iconCloseMobile {
+  color: #fff;
+  display: none;
+  height: 20px;
+  width: 25px;
+}
+
+.burger__iconClose {
+  color: #fff;
+  display: none;
+  height: 16px;
+  width: 16px;
+}
+
+.burger:not(.burger--active) {
+  .burger__iconMobile {
+    display: block;
+
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+
+  .burger__icon {
+    @media screen and (min-width: 1280px) {
+      display: block;
+    }
+  }
+}
+
+.burger--active {
+  .burger__iconCloseMobile {
+    display: block;
+
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+
+  .burger__iconClose {
+    @media screen and (min-width: 1280px) {
+      display: block;
+    }
+  }
+}

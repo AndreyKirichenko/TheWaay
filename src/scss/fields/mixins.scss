@@ -1,0 +1,24 @@
+@mixin textInputCommonStyle {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #D8D8D8;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1em;
+  padding: 0 8px;
+  width: 100%;
+
+  &:focus {
+    border-color: #fff;
+  }
+
+  &::placeholder {
+    color: #D8D8D8;
+  }
+
+  &--error {
+    border-color: #ff0000 ;
+  }
+}

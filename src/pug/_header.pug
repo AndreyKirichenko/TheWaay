@@ -7,9 +7,16 @@
       a.button.button--attention.header__button(href='')
         | Войти
 
-      button.header__burger
-        svg.svg.header__burgerIcon
-          use(xlink:href='#svgBurgerIcon')
+      .header__burger
+        button.burger
+          svg.svg.burger__iconClose
+            use(xlink:href='#svgClose')
 
-        svg.svg.header__burgerIconMobile
-          use(xlink:href='#svgBurgerMobileIcon')
+          svg.svg.burger__iconCloseMobile
+            use(xlink:href='#svgCloseMobile')
+
+          svg.svg.burger__icon
+            use(xlink:href='#svgBurgerIcon')
+
+          svg.svg.burger__iconMobile
+            use(xlink:href='#svgBurgerMobileIcon')

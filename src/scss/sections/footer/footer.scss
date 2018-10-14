@@ -24,7 +24,6 @@
     grid-template-columns: minmax(415px, auto) minmax(365px, auto) minmax(340px, auto);
     padding-bottom: 40px;
     padding-top: 80px;
-    width: 100%;
   }
 }
 
@@ -102,9 +101,12 @@
 }
 
 .footer__subscribe {
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  width: 180px;
 
   @media screen and (min-width: 1280px) {
     grid-area: sbscrb;
+    margin: 0;
+    width: 240px;
   }
 }

@@ -33,7 +33,7 @@
 
 .section3__content {
   padding-bottom: 40px;
-  padding-top: 150px;
+  padding-top: 100px;
   position: relative;
   z-index: 1;
 
@@ -46,9 +46,8 @@
 .section3__text {
   box-sizing: border-box;
   color: #fff;
-  font-size: 20px;
-  line-height: 28px;
-  max-width: 250px;
+  font-size: 16px;
+  line-height: 24px;
   margin: 0 auto 40px;
   text-align: center;
 
@@ -61,7 +60,7 @@
     line-height: 38px;
     margin: 0;
     max-width: 50%;
-    padding-left: 130px;
+    padding-left: 0;
     padding-right: 90px;
     text-align: left;
   }
@@ -141,10 +140,7 @@
   text-align: center;
 
   @media screen and (min-width: 1280px) {
-    right: -45px;
-    position: absolute;
-    top: 50%;
-    transform: rotate(-90deg);
+    display: none;
   }
 }
 

@@ -1,6 +1,10 @@
 import '../scss/app.scss';
 import '../pug/index.pug'
 
-document.addEventListener("DOMContentLoaded", function(event) {
+import Navigation from './menu'
+import Form from './form'
 
+document.addEventListener("DOMContentLoaded", function(event) {
+  Navigation();
+  Form();
 });

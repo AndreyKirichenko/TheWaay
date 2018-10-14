@@ -2,28 +2,41 @@ section.page__section.home
   .home__circle1
 
   .home__circle2
-  .page__content.home__content
-    .home__form.form
-      input.form__field.textInput(type='text', placeholder='Имя')
+  form.page__content.home__content
+    .home__fields
+      .form__field
+        //если ошибки нет, .form__error пустой, иначе отступ пропадет
+        input.form__textInput.textInput(type='text', placeholder='Имя и Фамилия')
+        .form__error
+          | Введите имя и фамилию
 
-      input.form__field.textInput(type='text', placeholder='Организация')
+      .form__field
+        input.form__textInput.textInput(type='text', placeholder='Компания')
+        .form__error
+          | Введите компанию
 
-      input.form__field.textInput(type='text', placeholder='Телефон')
+      .form__field
+        input.form__textInput.textInput(type='text', placeholder='Телефон')
+        .form__error
+          | Введите телефон
 
-      input.form__field.textInput(type='text', placeholder='Эл.почта')
+      .form__field
+        input.form__textInput.textInput.textInput--error(type='text', placeholder='Электронная почта')
+        .form__error
+          | Неправильный e-mail
 
-    .home__hint.hint
-      .hint__text
-        | Заполните форму и&nbsp;мы&nbsp;отправим вам подробную информацию, расскажем про особенности методологии и&nbsp;поможем прикинуть бизнес-кейс
+    .home__footer
+      .home__hint.hint
+        .hint__text
+          | Заполните форму и&nbsp;мы&nbsp;отправим вам подробную информацию, расскажем про особенности методологии и&nbsp;поможем прикинуть бизнес-кейс
 
-      svg.svg.hint__line
-        use(xlink:href='#svgSpeakerLine')
+        svg.svg.hint__line
+          use(xlink:href='#svgSpeakerLine')
 
-      .hint__speaker
+        .hint__speaker
 
-    a.button.button--attention.button--big.home__demo(href='#')
-      | Демо доступ
+      button.button.button--attention.button--big.home__submit
+        | Получить демо доступ
 
-    .home__version
-      .version
-        | The Waay. Demo version v1
+      .home__version
+        include _version

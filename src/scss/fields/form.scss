@@ -1,7 +1,23 @@
 .form__field {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+  }
 
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.form__textInput {
+  margin-bottom: 4px;
+}
+
+.form__error {
+  color: #d8d8d8;
+  height: 12px;
+  font-size: 12px;
+  line-height: 1em;
+  text-align: center;
 }
