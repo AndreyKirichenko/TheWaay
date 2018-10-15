@@ -5,7 +5,7 @@
   position: relative;
   z-index: 0;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     height: 90vh;
     min-height: 720px;
   }
@@ -57,7 +57,7 @@
   position: relative;
   z-index: 2;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     padding-top: 200px;
   }
 }
@@ -67,7 +67,7 @@
   width: 100%;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 130px;
     max-width: 490px;
   }
@@ -75,7 +75,7 @@
 
 .home__submit {
   margin-bottom: 10px;
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 0;
   }
 }
@@ -92,7 +92,7 @@
 .home__hint {
   margin: 0 auto 32px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     bottom: 0;
     left: 0;
     margin-bottom: 0;
@@ -103,7 +103,7 @@
 .home__version {
   text-align: center;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
@@ -120,7 +120,7 @@
   width: 64px;
   z-index: 3;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     display: block;
   }
 }
@@ -136,7 +136,7 @@
   width: 120px;
   z-index: 3;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     display: block;
   }
 }

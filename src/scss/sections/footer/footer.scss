@@ -4,7 +4,7 @@
   min-height: 480px;
   overflow: hidden;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     min-height: 720px;
   }
 }
@@ -14,13 +14,22 @@
   padding-bottom: 40px;
   padding-top: 30px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     display: grid;
+    grid-template:
+        'lg . soc'
+        'txt . lnks'
+        'cntcts . lnks'
+        'sbscrb . btn';
+    grid-template-columns: auto 60px auto;
+  }
+
+  @media screen and (min-width: $desktop) {
     grid-template:
         'lg . .'
         'txt cntcts lnks'
         'soc cntcts lnks'
-        'sbscrb btn hint';
+        'sbscrb btn .';
     grid-template-columns: minmax(415px, auto) minmax(365px, auto) minmax(340px, auto);
     padding-bottom: 40px;
     padding-top: 80px;
@@ -34,11 +43,14 @@
   margin: 0 auto 60px;
   width: 137px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     grid-area: lg;
+    margin: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
     height: 108px;
     margin-bottom: 140px;
-    margin-left: 0;
     width: 274px;
   }
 }
@@ -51,21 +63,28 @@
   max-width: 200px;
   text-align: center;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     grid-area: txt;
+    margin: 0;
+    max-width: 290px;
+    text-align: left;
+  }
+
+  @media screen and (min-width: $desktop) {
     font-size: 28px;
     line-height: 38px;
-    margin-left: 0;
     max-width: 320px;
     text-align: left;
   }
 }
 
 .footer__contacts {
-  margin-bottom: 45px;
-  @media screen and (min-width: 1280px) {
+  margin: 0 auto 45px;
+  max-width: 290px;
+
+  @media screen and (min-width: $tablet) {
     grid-area: cntcts;
-    margin-bottom: 0;
+    margin: 0;
     max-width: 290px;
   }
 }
@@ -74,7 +93,8 @@
   display: flex;
   justify-content: center;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
+    justify-content: left;
     grid-area: btn;
   }
 }
@@ -84,7 +104,7 @@
   justify-content: center;
   margin-bottom: 45px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     grid-area: soc;
     justify-content: left;
   }
@@ -93,7 +113,7 @@
 .footer__links {
   display: none;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     grid-area: lnks;
     justify-content: space-between;
@@ -104,7 +124,7 @@
   margin: 0 auto 20px;
   width: 180px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     grid-area: sbscrb;
     margin: 0;
     width: 240px;

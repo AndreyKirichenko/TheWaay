@@ -1,6 +1,14 @@
 .hint {
   position: relative;
   max-width: 200px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 490px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 200px;
+  }
 }
 
 .hint__text {
@@ -9,9 +17,12 @@
   line-height: 12px;
   text-align: center;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     font-size: 18px;
     line-height: 21px;
+  }
+
+  @media screen and (min-width: $desktop) {
     text-align: left;
   }
 }
@@ -36,7 +47,7 @@
 
 .hint__line,
 .hint__speaker {
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     display: block;
   }
 }

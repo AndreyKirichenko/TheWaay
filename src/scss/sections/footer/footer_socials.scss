@@ -3,19 +3,19 @@
   display: flex;
   justify-content: space-between;
   width: 118px;
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     width: 158px;
   }
 }
 
-.footerSocials__items {
-  @media screen and (min-width: 1280px) {
+.footerSocials__item {
+  @media screen and (min-width: $tablet) {
 
   }
 }
 
 .footerSocial__logo {
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
 
   }
 }
@@ -23,7 +23,7 @@
 .footerSocial__logo--telegram {
   height: 30px;
   width: 30px;
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     height: 40px;
     width: 40px;
   }
@@ -32,7 +32,7 @@
 .footerSocial__logo--fb {
   height: 30px;
   width: 30px;
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     height: 40px;
     width: 40px;
   }
@@ -41,7 +41,7 @@
 .footerSocial__logo--m {
   height: 30px;
   width: 30px;
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     height: 40px;
     width: 40px;
   }

@@ -6,7 +6,7 @@
   position: relative;
   width: 100%;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     height: 98px;
   }
 }
@@ -20,7 +20,7 @@
   transform: translateY(-50%);
   width: 48px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     height: 38px;
     width: 97px;
   }
@@ -29,7 +29,7 @@
 .header__button {
   margin-left: 20px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     margin-left: 40px;
   }
 }

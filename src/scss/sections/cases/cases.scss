@@ -4,7 +4,7 @@
   min-height: 2400px;
   position: relative;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     min-height: 3250px;
   }
 
@@ -23,7 +23,7 @@
       background-image: url('/img/cases_x2.png');
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $tablet) {
       background-position: 55% 270px;
       background-size: 1547px;
     }
@@ -34,7 +34,7 @@
   margin-top: 40px;
   z-index: 1;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     margin-top: 80px;
   }
 }
@@ -45,7 +45,7 @@
   margin-right: auto;
   text-align: center;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 40px;
     max-width: 620px;
   }
@@ -57,7 +57,7 @@
   margin: 0 auto 440px;
   max-width: 690px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     margin: 0 auto 956px;
   }
 }
@@ -76,7 +76,7 @@
     content: '';
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     font-size: 32px;
     line-height: 38px;
   }
@@ -93,7 +93,7 @@
   height: 36px;
   width: 91px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     height: 72px;
     width: 182px;
   }
@@ -106,7 +106,7 @@
   line-height: 12px;
   margin-bottom: 16px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     font-size: 20px;
     line-height: 23px;
     margin-bottom: 32px;
@@ -114,7 +114,7 @@
 }
 
 .cases__articles {
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 160px;
   }
 }
@@ -125,16 +125,29 @@
   justify-content: space-between;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
+    flex-wrap: nowrap;
     margin-bottom: 80px;
   }
 }
 
 .cases__articleItem {
-  flex-basis: 120px;
-  width: 120px;
+  flex-basis: 46%;
+  margin-bottom: 40px;
+  width: 46%;
 
-  @media screen and (min-width: 1280px) {
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: 30%;
+    margin-bottom: 0;
+    width: 30%;
+  }
+
+  @media screen and (min-width: $desktop) {
     flex-basis: 290px;
     width: 290px;
   }

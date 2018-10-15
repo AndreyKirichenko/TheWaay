@@ -1,24 +1,24 @@
-.links {
+.lookAndRead {
   background-color: #fff;
 
   min-height: 1600px;
   overflow: hidden;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     min-height: 1260px;
   }
 }
 
-.links__content {
+.lookAndRead__content {
   padding-bottom: 55px;
   padding-top: 40px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     padding-bottom: 132px;
     padding-top: 80px;
   }
 }
 
-.links__title {
+.lookAndRead__title {
   color: #000;
 }

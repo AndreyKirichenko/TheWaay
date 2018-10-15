@@ -3,7 +3,7 @@
 }
 
 .footerLinks__item {
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 20px;
     width: 160px;
   }
@@ -15,7 +15,7 @@
   line-height: 12px;
   text-decoration: none;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     font-size: 20px;
     line-height: 23px;
   }

@@ -4,7 +4,7 @@
   min-height: 1240px;
   overflow: hidden;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     min-height: 2690px;
   }
 }
@@ -12,7 +12,7 @@
 .section4__content {
   padding-top: 100px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     padding-top: 140px;
   }
 }
@@ -22,7 +22,7 @@
   flex-direction: column;
   margin: 0 auto 80px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 120px;
     width: 600px;
   }
@@ -35,7 +35,7 @@
   margin-bottom: 25px;
   text-align: center;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     font-size: 20px;
     line-height: 23px;
     margin-bottom: 50px;
@@ -58,7 +58,7 @@
   width: 100%;
   z-index: 2;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     height: 603px;
     margin: 0 auto 160px;
     width: 680px;
@@ -82,9 +82,9 @@
     transform: translate(-50%, -50%);
     width: 640px;
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $tablet) {
       height: 800px;
-      width: 1280px;
+      width: $tablet;
     }
   }
 
@@ -99,7 +99,7 @@
     transform: translate(-50%, -50%);
     width: 390px;
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $tablet) {
       height: 531px;
       width: 780px;
     }

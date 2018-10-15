@@ -10,7 +10,7 @@
   padding: 0;
   width: 20px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     height: 28px;
     width: 28px;
   }
@@ -48,13 +48,13 @@
   .burger__iconMobile {
     display: block;
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $tablet) {
       display: none;
     }
   }
 
   .burger__icon {
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $tablet) {
       display: block;
     }
   }
@@ -64,13 +64,13 @@
   .burger__iconCloseMobile {
     display: block;
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $tablet) {
       display: none;
     }
   }
 
   .burger__iconClose {
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $tablet) {
       display: block;
     }
   }

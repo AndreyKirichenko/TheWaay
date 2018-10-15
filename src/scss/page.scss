@@ -32,12 +32,12 @@
 
 .page__content {
   box-sizing: border-box;
-  max-width: 1280px;
+  max-width: $desktop;
   padding-left: 30px;
   padding-right: 30px;
   width: 100%;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     padding-left: 80px;
     padding-right: 80px;
   }
@@ -51,7 +51,7 @@
   transform: rotate(-90deg);
   z-index: 9;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     display: block;
   }
 }

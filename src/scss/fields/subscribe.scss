@@ -14,7 +14,7 @@
     color: #fff;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     height: 40px;
     padding-right: 60px;
   }
@@ -34,7 +34,7 @@
   width: 40px;
   z-index: 1;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     height: 40px;
     width: 60px;
   }

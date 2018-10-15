@@ -3,7 +3,7 @@
   height: 40px;
   text-align: center;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $tablet) {
     font-size: 22px;
     height: 60px;
   }
