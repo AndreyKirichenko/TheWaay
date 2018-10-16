@@ -1,12 +1,7 @@
 .cases {
   background-color: #000511;
   background-image: linear-gradient(160deg, #2d2a2e, #000511);
-  min-height: 2400px;
   position: relative;
-
-  @media screen and (min-width: $tablet) {
-    min-height: 3250px;
-  }
 
   &:before {
     background-image: url('/img/cases.png');
@@ -31,11 +26,13 @@
 }
 
 .cases__content {
-  margin-top: 40px;
+  padding-bottom: 40px;
+  padding-top: 40px;
   z-index: 1;
 
   @media screen and (min-width: $tablet) {
-    margin-top: 80px;
+    padding-bottom: 10em;
+    padding-top: 80px;
   }
 }
 
@@ -150,4 +147,24 @@
     flex-basis: 290px;
     width: 290px;
   }
+}
+
+.cases__demoDescription {
+  color: #fff;
+  font-size: 10px;
+  line-height: 12px;
+  margin: 0 auto 20px;
+  text-align: center;
+  width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 23px;
+    margin: 0 auto 40px;
+    max-width: 60%;
+  }
+}
+
+.cases__demo {
+  margin: 0 auto;
 }

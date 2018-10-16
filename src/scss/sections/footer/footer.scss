@@ -18,18 +18,24 @@
     display: grid;
     grid-template:
         'lg . soc'
+        '. . .'
         'cntcts . lnks'
         'txt . lnks'
+        '. . .'
         'sbscrb . btn';
+    grid-template-rows: auto 45px auto auto 20px auto;
     grid-template-columns: auto 60px auto;
   }
 
   @media screen and (min-width: $wide_desktop) {
     grid-template:
         'lg . .'
+        '. . .'
         'txt cntcts lnks'
         'soc cntcts lnks'
+        '. . .'
         'sbscrb btn .';
+    grid-template-rows: auto 140px auto auto 20px auto;
     grid-template-columns: minmax(415px, auto) minmax(365px, auto) minmax(340px, auto);
     padding-bottom: 40px;
     padding-top: 80px;
@@ -50,7 +56,6 @@
 
   @media screen and (min-width: $wide_desktop) {
     height: 108px;
-    margin-bottom: 140px;
     width: 274px;
   }
 }
@@ -107,6 +112,7 @@
   @media screen and (min-width: $tablet) {
     grid-area: soc;
     justify-content: left;
+    margin-bottom: 0;
   }
 }
 
