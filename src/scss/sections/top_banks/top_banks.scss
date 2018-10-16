@@ -142,18 +142,8 @@
   }
 }
 
-.topBanks__done {
-  color: #fff;
-  font-size: 10px;
-  line-height: 12px;
+.topBanks__achievements {
   margin-bottom: 35px;
-  text-align: center;
-
-  @media screen and (min-width: $tablet) {
-    font-size: 20px;
-    line-height: 23px;
-    margin-bottom: 80px;
-  }
 }
 
 .topBanks__more {

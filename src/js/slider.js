@@ -1,11 +1,13 @@
-// import {tns} from 'tiny-slider/src/tiny-slider.module.js';
+import Swiper from 'swiper';
 
 
 function slider() {
-  // let slider = tns({
-  //   container: '.my-slider',
-  //   items: 1
-  // });
+  let swiper = new Swiper('.swiper-container', {
+    navigation: {
+      nextEl: '.swiper__next',
+      prevEl: '.swiper__prev',
+    },
+  });
 }
 
-export default slider();
+export default slider;

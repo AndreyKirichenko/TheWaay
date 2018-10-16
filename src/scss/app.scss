@@ -1,3 +1,8 @@
+//libs
+@import "swiper";
+
+
+//my
 @import "variables";
 @import "reset";
 @import "fonts";
@@ -24,11 +29,13 @@
 @import "sections/menu/menu";
 @import "sections/menu/navigation";
 
-@import "sections/home";
-@import "sections/section2";
-@import "sections/section3";
-@import "sections/section4";
-@import "sections/top_banks";
+@import "sections/request";
+@import "sections/welcome";
+@import "sections/about";
+@import "sections/we_help/we_help";
+@import "sections/we_help/we_help_slider";
+@import "sections/top_banks/top_banks";
+@import "sections/top_banks/top_banks_achievements";
 @import "sections/cases/cases";
 @import "sections/cases/cases_article";
 @import "sections/look_and_read";
@@ -36,3 +43,5 @@
 @import "sections/footer/footer_socials";
 @import "sections/footer/footer_contacts";
 @import "sections/footer/footer_links";
+
+@import "slider";

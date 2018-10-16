@@ -4,7 +4,7 @@
   min-height: 480px;
   overflow: hidden;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $wide_desktop ) {
     min-height: 720px;
   }
 }
@@ -18,13 +18,13 @@
     display: grid;
     grid-template:
         'lg . soc'
-        'txt . lnks'
         'cntcts . lnks'
+        'txt . lnks'
         'sbscrb . btn';
     grid-template-columns: auto 60px auto;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $wide_desktop) {
     grid-template:
         'lg . .'
         'txt cntcts lnks'
@@ -48,7 +48,7 @@
     margin: 0;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $wide_desktop) {
     height: 108px;
     margin-bottom: 140px;
     width: 274px;
@@ -70,7 +70,7 @@
     text-align: left;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $wide_desktop) {
     font-size: 28px;
     line-height: 38px;
     max-width: 320px;

@@ -6,7 +6,7 @@
     max-width: 490px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $wide_desktop) {
     max-width: 200px;
   }
 }
@@ -22,7 +22,7 @@
     line-height: 21px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $wide_desktop) {
     text-align: left;
   }
 }
@@ -47,7 +47,7 @@
 
 .hint__line,
 .hint__speaker {
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $wide_desktop) {
     display: block;
   }
 }

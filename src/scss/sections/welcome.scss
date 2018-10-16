@@ -1,16 +1,12 @@
-.section2 {
+.welcome {
   background-color: #111;
   background-image: linear-gradient(135deg, #2d2a2e, #000);
 
-  min-height: 480px;
+  min-height: 90vh;
   overflow: hidden;
-
-  @media screen and (min-width: $tablet) {
-    min-height: 720px;
-  }
 }
 
-.section2__content {
+.welcome__content {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -19,13 +15,13 @@
   position: relative;
 }
 
-.section2__sliderDotts {
+.welcome__sliderDotts {
   left: 0;
   position: absolute;
   top: 0;
 }
 
-.section2__logo {
+.welcome__logo {
   color: #EFAC56;
   height: 72px;
   width: 185px;
