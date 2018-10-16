@@ -24,15 +24,18 @@
 }
 
 .page__section {
-  align-self: flex-start;
+  align-items: flex-start;
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
 
 .page__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   box-sizing: border-box;
   max-width: $wide_desktop;
   padding-left: 30px;

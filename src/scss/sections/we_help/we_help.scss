@@ -5,6 +5,10 @@
   position: relative;
 }
 
+.weHelp__content {
+  position: relative;
+}
+
 .weHelp__content--1 {
   padding-top: 100px;
 
@@ -86,8 +90,4 @@
       width: $desktop;
     }
   }
-}
-
-.weHelp__slider {
-
 }

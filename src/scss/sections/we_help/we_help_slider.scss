@@ -1,5 +1,6 @@
 .weHelpSlider {
   position: relative;
+  overflow: visible;
 }
 
 .weHelpSlider__wrapper {
@@ -24,7 +25,6 @@
 .weHelpSlider__image {
   background-size: contain;
   content: '';
-
   height: 266px;
   left: 50%;
   margin: 0 auto;
@@ -82,10 +82,36 @@
   }
 }
 
-.weHelpSlider__prev {
+.weHelpSlider__button {
+  align-items: center;
+  top: 300px;
+  cursor: pointer;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  position: absolute;
+  width: 40px;
+  z-index: 2;
 
+  @media screen and (min-width: $tablet) {
+    top: 580px;
+  }
 }
 
-.weHelpSlider__next {
+.weHelpSlider__button--prev {
+  left: 0;
+}
 
+.weHelpSlider__button--next {
+  right: 0;
+}
+
+.weHelpSlider__icon {
+  color: #fff;
+  height: 30px;
+  width: 10px;
+  @media screen and (min-width: $tablet) {
+    height: 60px;
+    width: 20px;
+  }
 }
