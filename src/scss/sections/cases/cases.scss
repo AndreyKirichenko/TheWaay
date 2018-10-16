@@ -115,7 +115,7 @@
 
 .cases__articles {
   @media screen and (min-width: $tablet) {
-    margin-bottom: 160px;
+    margin-bottom: 100px;
   }
 }
 
@@ -135,7 +135,6 @@
   flex-basis: 46%;
   margin-bottom: 40px;
   width: 46%;
-
 
   &:last-child {
     margin-bottom: 0;
