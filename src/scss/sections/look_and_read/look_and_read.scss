@@ -1,12 +1,6 @@
 .lookAndRead {
   background-color: #fff;
-
-  min-height: 1600px;
   overflow: hidden;
-
-  @media screen and (min-width: $tablet) {
-    min-height: 1260px;
-  }
 }
 
 .lookAndRead__content {
