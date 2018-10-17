@@ -1,0 +1,115 @@
+.lookAndReadTeaser {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+}
+
+.lookAndReadTeaser__image {
+  background-color: #D8D8D8;
+  background-size: cover;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+
+  &:before {
+    content: '';
+    display: block;
+    margin-top: 60%;
+  }
+
+  &:after {
+    background-color: transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background-color 0.5s ease;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 40px;
+  }
+}
+
+.lookAndReadTeaser__image--watch1 {
+  background-image: url('/img/look_and_read/watch/1.jpg');
+}
+
+.lookAndReadTeaser__image--watch2 {
+  background-image: url('/img/look_and_read/watch/2.jpg');
+}
+
+.lookAndReadTeaser__image--watch3 {
+  background-image: url('/img/look_and_read/watch/3.jpg');
+}
+
+.lookAndReadTeaser__image--watch4 {
+  background-image: url('/img/look_and_read/watch/4.jpg');
+}
+
+.lookAndReadTeaser__image--read1 {
+  background-image: url('/img/look_and_read/read/1.jpg');
+}
+
+.lookAndReadTeaser__image--read2 {
+  background-image: url('/img/look_and_read/read/2.jpg');
+}
+
+.lookAndReadTeaser__image--read3 {
+  background-image: url('/img/look_and_read/read/3.jpg');
+}
+
+.lookAndReadTeaser__image--read4 {
+  background-image: url('/img/look_and_read/read/4.jpg');
+}
+
+.lookAndReadTeaser__image--read5 {
+  background-image: url('/img/look_and_read/read/5.jpg');
+}
+
+.lookAndReadTeaser__image--read6 {
+  background-image: url('/img/look_and_read/read/6.jpg');
+}
+
+.lookAndReadTeaser:hover {
+  .lookAndReadTeaser__image:after {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.lookAndReadTeaser:hover .lookAndReadTeaser__playIcon {
+  transform: scale(1.1, 1.1) translate(-50%, -50%);
+}
+
+.lookAndReadTeaser__playIcon {
+  height: 30px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.25s ease-in-out;
+  width: 30px;
+  z-index: 2;
+
+  @media screen and (min-width: $tablet) {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.lookAndReadTeaser__text {
+  color: #7B7B7B;
+  font-size: 10px;
+  line-height: 12px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}

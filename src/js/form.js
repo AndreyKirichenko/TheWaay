@@ -39,6 +39,10 @@ $('.request__content').submit(function (e){
       else if (result == 'ok') {
         $('.request__content .form__error span').fadeOut();
         $('.request__content input.form__textInput').removeClass('textInput--error');
+
+        $('.request__fields').fadeOut();
+        $('.request__footer').fadeOut();
+        $('.request__success').fadeIn();
         return false;
       }
     },
