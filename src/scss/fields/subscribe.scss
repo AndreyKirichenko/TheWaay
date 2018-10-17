@@ -6,8 +6,8 @@
 .subscribe__input {
   @include textInputCommonStyle;
   color: #fff;
+  font-size: 12px;
   height: 30px;
-
   padding-right: 40px;
 
   &::placeholder {
