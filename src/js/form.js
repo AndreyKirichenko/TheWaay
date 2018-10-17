@@ -32,8 +32,8 @@ $('.request__content').submit(function (e){
     data: $('.request__content').serialize(),
     success: function (result) {
       if (result == 'fields') {
-        $('.request__content .form__error span').fadeOut();
-        $('.request__content input.form__textInput').removeClass('textInput--error');
+        $('.request__content .form__error span').fadeIn();
+        $('.request__content input.form__textInput').addClass('textInput--error');
         return false;
       }
       else if (result == 'ok') {
@@ -45,11 +45,6 @@ $('.request__content').submit(function (e){
         $('.request__success').fadeIn();
         return false;
       }
-    },
-    error: function (result) {
-      $('.request__content .form__error span').fadeIn();
-      $('.request__content input.form__textInput').addClass('textInput--error');
-      return false;
     }
   });
 });
