@@ -47,11 +47,11 @@
         'ftr ftr ftr';
 
     grid-template-columns: 46% 8% 46%;
-    grid-template-rows: auto 40px auto;
+    grid-template-rows: minmax(auto, 653px) 40px auto;
   }
 
   @media screen and (min-width: $desktop) {
-    grid-template-columns: 48% 4% 48%;
+    grid-template-columns: 56% 4% 40%;
   }
 }
 
@@ -68,17 +68,17 @@
   @media screen and (min-width: $tablet) {
     align-items: center;
     display: flex;
-    font-size: 18px;
+    font-size: 20px;
     justify-content: flex-start;
-    line-height: 25px;
+    line-height: 30px;
     text-align: left;
   }
 
   @media screen and (min-width: $desktop) {
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 26px;
+    line-height: 34px;
     margin: 0;
-    padding-left: 100px;
+    padding-left: 60px;
     padding-right: 0;
   }
 
@@ -88,49 +88,87 @@
   }
 }
 
+.about__telephoneOuter {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  grid-area: tel;
+}
+
 .about__telephone {
+  cursor: pointer;
   display: block;
   grid-area: tel;
-  margin: 0 auto;
   position: relative;
   text-decoration: none;
 
   @media screen and (min-width: $tablet) {
-    background-image: url('/img/mobile.png');
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: contain;
-    //height: 653px;
-    //width: 439px;
     width: 100%;
 
-    &:before {
+    &:after {
+      //original sizes
+      //height: 653px;
+      //width: 439px;
+
+      background-image: url('/img/mobile.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      bottom: 0;
       content: '';
       display: block;
-      margin-top: 148%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 2;
     }
   }
 }
 
-.about__telephone:hover .about__playIcon{
-  transform: scale(1.1, 1.1);
+.about__telephoneInnerContainer {
+  @media screen and (min-width: $tablet) {
+    //original sizes
+    //width: 266px;
+    //height: 575px;
+
+    background-image: url('/img/mobile_bg.jpg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 88.05%;
+    left: 19.59%;
+    position: absolute;
+    top: 2.45%;
+    width: 60.59%;
+    z-index: 1;
+  }
 }
 
 .about__playIcon {
   height: 60px;
   margin: 0 auto;
-  transition: transform 0.25s ease-in-out;
+  position: relative;
+  transition: transform 0.25s ease;
   width: 60px;
+  z-index: 3;
 
   @media screen and (min-width: $tablet) {
+    border-radius: 50%;
     height: 120px;
     left: 50%;
+    margin-left: -60px;
+    margin-top: -60px;
     position: absolute;
-    top: 40%;
-    //transform: translate(-50%, -50%);
-    margin: -60px 0 0 -60px;
+    top: 50%;
     width: 120px;
   }
+}
+
+.about__telephone:hover .about__playIcon{
+  transform: scale(1.1, 1.1);
 }
 
 .about__footer {

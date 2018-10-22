@@ -8,7 +8,7 @@ let current = 0;
 function topBanksAchievements() {
   fadeIn(items[current]);
 
-  let timer = setInterval(function(){
+  setInterval(function(){
     let next = getNextIndex();
     fadeOut(items[current]);
     fadeIn(items[next]);

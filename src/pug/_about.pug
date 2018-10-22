@@ -4,9 +4,11 @@ section.page__section.about#about
       p.about__text
         | У&nbsp;нашей системы персонализации отношений Банка с&nbsp;клиентами 3&nbsp;особенности: она дает самое глубокое понимание клиента на&nbsp;рынке, она умеет автоматически формировать персональные коммуникации на&nbsp;основании этого самого глубоко профиля и&nbsp;в&nbsp;третьих она умеет работать в&nbsp;облаке и&nbsp;попробовать ее&nbsp;вы&nbsp;можете прямо сейчас.
 
-      a.about__telephone(href='https://vimeo.com/295535186', target='_blank ')
-        svg.svg.about__playIcon
-          use(xlink:href='#svgPlay')
+      .about__telephoneOuter
+        a.about__telephone(href='https://vimeo.com/295535186', target='_blank ')
+          .about__telephoneInnerContainer
+            svg.svg.about__playIcon
+              use(xlink:href='#svgPlay')
 
       .about__footer
         a.button.button--attention.button--big.about__demo(href='#request')
