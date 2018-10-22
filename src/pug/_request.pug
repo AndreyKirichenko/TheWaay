@@ -6,22 +6,22 @@ section.page__section.request#request
     .request__fields
       .form__field
         //если ошибки нет, .form__error пустой, иначе отступ пропадет
-        input.form__textInput.textInput(type='text', placeholder='Имя и Фамилия', required)
+        input.form__textInput.textInput(type='text', placeholder='Имя и Фамилия', name='yourname', required)
         .form__error
           span(style='display: none;') Введите имя и фамилию
 
       .form__field
-        input.form__textInput.textInput(type='text', placeholder='Компания', required)
+        input.form__textInput.textInput(type='text', placeholder='Компания', name='company', required)
         .form__error
           span(style='display: none;') Введите компанию
 
       .form__field
-        input.form__textInput.textInput(type='text', placeholder='Телефон', required)
+        input.form__textInput.textInput(type='text', placeholder='Телефон', name='phone', required)
         .form__error
           span(style='display: none;') Введите телефон
 
       .form__field
-        input.form__textInput.textInput(type='text', placeholder='Электронная почта', required)
+        input.form__textInput.textInput(type='email', placeholder='Электронная почта', name='email', required)
         .form__error
           span(style='display: none;') Неправильный e-mail
 
@@ -42,4 +42,4 @@ section.page__section.request#request
         include _version
 
     .request__success
-      | Спасибо!
+      | Спасибо! мы напишем вам :)
