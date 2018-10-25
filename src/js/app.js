@@ -2,7 +2,7 @@ import '../scss/app.scss';
 import '../pug/index.pug'
 
 import '@babel/polyfill';
-import page from 'page';
+import router from 'page';
 
 import SmoothScroll from './smooth_scroll';
 import Welcome from './welcome';
@@ -19,9 +19,9 @@ let documentReady = new Promise((resolve) => {
 documentReady.then(controller);
 
 function controller() {
-  page('/', initIndexPage);
-  page('/sign_in.html', function(){ initSignInPage() });
-  page();
+  router('/', initIndexPage);
+  router('/sign_in.html', function(){ initSignInPage() });
+  router();
 }
 
 function initCommon() {
