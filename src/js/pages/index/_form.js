@@ -3,7 +3,7 @@ import $ from 'jquery'
 
 let home = document.querySelector('.request');
 
-function form() {
+function _form() {
   blurOnFocus();
 }
 
@@ -49,4 +49,4 @@ $('.request__content').submit(function (e){
   });
 });
 
-export default form;
+export default _form;

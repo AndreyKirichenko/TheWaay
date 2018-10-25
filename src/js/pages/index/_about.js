@@ -1,5 +1,5 @@
-import DEVICE_BREAKPOINTS from './device_breakpoints';
-import videoCode from './video_code';
+import DEVICE_BREAKPOINTS from '../../device_breakpoints';
+import videoCode from '../../video_code';
 
 const ORIGIN_SIZES = {
   HEIGHT: 653,
@@ -12,7 +12,7 @@ let outer = document.querySelector('.about__telephoneOuter');
 let telephone = outer.querySelector('.about__telephone');
 let inner = outer.querySelector('.about__telephoneInnerContainer');
 
-function about() {
+function _about() {
   videoContainer();
 }
 
@@ -67,4 +67,4 @@ function playVideo(url) {
 
 }
 
-export default about;
+export default _about;

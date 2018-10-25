@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 
 
-function slider() {
+function _slider() {
   let mySwiper = initSlider();
 
   window.addEventListener('resize', function(){
@@ -26,4 +26,4 @@ function initSlider() {
   });
 }
 
-export default slider;
+export default _slider;

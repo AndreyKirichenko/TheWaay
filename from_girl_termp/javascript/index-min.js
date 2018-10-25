@@ -1,1 +1,0 @@
-$.fn.andSelf=function(){return this.addBack.apply(this,arguments)},$(document).ready(function(){$(".owl-carousel--centeredImages").owlCarousel({stagePadding:0,items:1,loop:!0,center:!0,singleItem:!0,dots:!0,dotsContainer:".owl-carousel--centeredImages__dots",nav:!1})});

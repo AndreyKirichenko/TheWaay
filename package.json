@@ -44,6 +44,7 @@
   },
   "dependencies": {
     "dom-delegate": "^2.2.0",
+    "navigo": "^7.1.2",
     "smooth-scroll": "^14.2.1",
     "swiper": "^4.4.1",
     "validate.js": "^0.12.0"

@@ -86,7 +86,7 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/css\/components\/case-slider.scss": {
+	"\/css\/components\/case-_slider.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -94,12 +94,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/components\/case-slider.css",
+		"oAP": "\/css\/components\/case-_slider.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/components\/demo-slider.scss": {
+	"\/css\/components\/demo-_slider.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -107,12 +107,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/components\/demo-slider.css",
+		"oAP": "\/css\/components\/demo-_slider.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/components\/logo-slider.scss": {
+	"\/css\/components\/logo-_slider.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -120,7 +120,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/components\/logo-slider.css",
+		"oAP": "\/css\/components\/logo-_slider.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
