@@ -6,32 +6,33 @@ html
     title TheWaay
     link(rel="shortcut icon", href="img/favicon.ico", type="image/x-icon")
 
-    include _metrics
+    include common/_metrics
 
   body
-    include _svg
+    include common/_svg
+
     .page
-      .page__version
-        include _version
+      include common/_popup
 
-      include _popup
+      include common/_version
 
-      include _header
+      include common/_header
 
-      include _menu
+      include common/_welcome
 
-      include _welcome
 
-      include _about
+      include index/_menu
 
-      include _we_help
+      include index/_about
 
-      include _top_banks
+      include index/_we_help
 
-      include _cases
+      include index/_top_banks
 
-      include _look_and_read
+      include index/_cases
 
-      include _request
+      include index/_look_and_read
 
-      include _footer
+      include index/_request
+
+      include index/_footer

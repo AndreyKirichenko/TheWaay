@@ -24,24 +24,26 @@
 
 @import "page";
 
-@import "sections/header/header";
-@import "sections/menu/menu";
-@import "sections/menu/navigation";
+@import "header/header";
+@import "menu/menu";
+@import "menu/navigation";
 
-@import "sections/request";
-@import "sections/welcome";
-@import "sections/about";
-@import "sections/we_help/we_help";
-@import "sections/we_help/we_help_slider";
-@import "sections/top_banks/top_banks";
-@import "sections/top_banks/top_banks_achievements";
-@import "sections/cases/cases";
-@import "sections/cases/cases_article";
-@import "sections/look_and_read/look_and_read";
-@import "sections/look_and_read/look_and_read_teaser";
-@import "sections/footer/footer";
-@import "sections/footer/footer_socials";
-@import "sections/footer/footer_contacts";
-@import "sections/footer/footer_links";
+@import "sections/common/welcome";
+@import "sections/common/request";
+
+
+@import "sections/index/about/about";
+@import "sections/index/we_help/we_help";
+@import "sections/index/we_help/we_help_slider";
+@import "sections/index/top_banks/top_banks";
+@import "sections/index/top_banks/top_banks_achievements";
+@import "sections/index/cases/cases";
+@import "sections/index/cases/cases_article";
+@import "sections/index/look_and_read/look_and_read";
+@import "sections/index/look_and_read/look_and_read_teaser";
+@import "sections/index/footer/footer";
+@import "sections/index/footer/footer_socials";
+@import "sections/index/footer/footer_contacts";
+@import "sections/index/footer/footer_links";
 
 @import "slider";

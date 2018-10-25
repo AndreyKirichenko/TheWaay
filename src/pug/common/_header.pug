@@ -1,8 +1,9 @@
 .page__section.page__header
   .page__content
     header.header
-      svg.svg.header__logo
-        use(xlink:href='#svgTheWaayLogo')
+      a.header__logoLink(href='#about')
+        svg.svg.header__logo
+          use(xlink:href='#svgTheWaayLogo')
 
       a.button.button--attention.header__button(href='#request')
         | Войти
