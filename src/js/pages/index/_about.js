@@ -1,6 +1,7 @@
 import DEVICE_BREAKPOINTS from '../../device_breakpoints';
 import videoCode from '../../video_code';
 
+
 const ORIGIN_SIZES = {
   HEIGHT: 653,
   WIDTH: 439
@@ -8,11 +9,13 @@ const ORIGIN_SIZES = {
 
 const ORIGIN_RATIO = ORIGIN_SIZES.WIDTH / ORIGIN_SIZES.HEIGHT;
 
-let outer = document.querySelector('.about__telephoneOuter');
-let telephone = outer.querySelector('.about__telephone');
-let inner = outer.querySelector('.about__telephoneInnerContainer');
+let outer, telephone, inner;
 
-function _about() {
+function about() {
+  outer = document.querySelector('.about__telephoneOuter');
+  telephone = outer.querySelector('.about__telephone');
+  inner = outer.querySelector('.about__telephoneInnerContainer');
+
   videoContainer();
 }
 
@@ -67,4 +70,4 @@ function playVideo(url) {
 
 }
 
-export default _about;
+export default about;
