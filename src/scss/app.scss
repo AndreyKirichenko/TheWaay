@@ -1,49 +1,55 @@
 //libs
-@import "swiper";
+@import 'swiper';
 
 //my
-@import "variables";
-@import "reset";
-@import "fonts";
+@import 'variables';
+@import 'reset';
+@import 'fonts';
 
-@import "svg";
-@import "common";
+@import 'svg';
+@import 'common';
 
-@import "typography/title";
+@import 'typography/title';
 
-@import "fields/mixins";
-@import "fields/form";
-@import "fields/button";
-@import "fields/text_input";
-@import "fields/subscribe";
+@import 'fields/mixins';
+@import 'fields/form';
+@import 'fields/button';
+@import 'fields/text_input';
+@import 'fields/subscribe';
 
-@import "popup";
-@import "burger";
-@import "hint";
-@import "version";
+@import 'popup';
+@import 'burger';
+@import 'hint';
+@import 'version';
 
-@import "page";
+@import 'page';
 
-@import "header/header";
-@import "menu/menu";
-@import "menu/navigation";
+@import 'header/header';
+@import 'menu/menu';
+@import 'menu/navigation';
 
-@import "sections/common/welcome";
-@import "sections/common/request";
+@import 'sections/common/welcome';
+
+//Page index
+@import 'sections/index/about/about';
+@import 'sections/index/we_help/we_help';
+@import 'sections/index/we_help/we_help_slider';
+@import 'sections/index/top_banks/top_banks';
+@import 'sections/index/top_banks/top_banks_achievements';
+@import 'sections/index/cases/cases';
+@import 'sections/index/cases/cases_article';
+@import 'sections/index/look_and_read/look_and_read';
+@import 'sections/index/look_and_read/look_and_read_teaser';
+@import 'sections/index/sign_up/sign_up';
 
 
-@import "sections/index/about/about";
-@import "sections/index/we_help/we_help";
-@import "sections/index/we_help/we_help_slider";
-@import "sections/index/top_banks/top_banks";
-@import "sections/index/top_banks/top_banks_achievements";
-@import "sections/index/cases/cases";
-@import "sections/index/cases/cases_article";
-@import "sections/index/look_and_read/look_and_read";
-@import "sections/index/look_and_read/look_and_read_teaser";
-@import "sections/common/footer/footer";
-@import "sections/common/footer/footer_socials";
-@import "sections/common/footer/footer_contacts";
-@import "sections/common/footer/footer_links";
+//Page Sign In 
+@import 'sections/sign_in/_sign_in';
 
-@import "slider";
+// Footer
+@import 'sections/common/footer/footer';
+@import 'sections/common/footer/footer_socials';
+@import 'sections/common/footer/footer_contacts';
+@import 'sections/common/footer/footer_links';
+
+@import 'slider';

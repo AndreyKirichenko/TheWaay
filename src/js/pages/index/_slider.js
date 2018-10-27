@@ -1,6 +1,5 @@
 import Swiper from 'swiper';
 
-
 function _slider() {
   let mySwiper = initSlider();
 

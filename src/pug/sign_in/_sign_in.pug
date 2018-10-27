@@ -1,0 +1,28 @@
+section.page__section.signIn#signIn
+  .signIn__circle1
+
+  .signIn__circle2
+  form.page__content.signIn__content
+    .signIn__fields
+      .form__field
+        input.form__textInput.textInput(type='email', placeholder='Электронная почта', name='email', required)
+        .form__error
+          span(style='display: none;') Неверный e-mail
+
+      .form__field
+        input.form__textInput.textInput(type='password', placeholder='', name='password', required)
+        .form__error
+          span(style='display: none;') Неверный пароль
+
+
+      button.button.button--attention.button--big.signIn__submit
+        | Получить демо доступ
+
+      .signIn__version
+        include ../common/_version
+
+    .signIn__success
+      | Спасибо! мы напишем вам :)
+
+    .signIn__error
+      | 

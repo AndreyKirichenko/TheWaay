@@ -1,11 +1,12 @@
 const TIMEOUT = 5000;
 
-let list = document.querySelector('.topBanksAchievements');
-let items = document.querySelectorAll('.topBanksAchievements__item');
-let length = items.length;
-let current = 0;
+let current, length;
 
 function topBanksAchievements() {
+  let items = document.querySelectorAll('.topBanksAchievements__item');
+  current = 0;
+  length = items.length;
+
   fadeIn(items[current]);
 
   setInterval(function(){

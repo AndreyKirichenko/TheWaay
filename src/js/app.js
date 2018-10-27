@@ -20,18 +20,19 @@ documentReady.then(controller);
 
 function controller() {
   router('/', initIndexPage);
-  router('/sign_in.html', function(){ initSignInPage() });
+  router('/sign_in.html', initSignInPage);
   router();
 }
 
 function initCommon() {
   Welcome();
   SmoothScroll();
-  Navigation();
+  new Navigation();
 }
 
-function initIndexPage(context, next) {
+function initIndexPage() {
   console.log('initIndexPage!!!');
+
   initCommon();
   IndexPage();
 }

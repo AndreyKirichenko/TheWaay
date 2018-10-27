@@ -1,9 +1,9 @@
-section.page__section.request#request
-  .request__circle1
+section.page__section.signUp#signUp
+  .signUp__circle1
 
-  .request__circle2
-  form.page__content.request__content
-    .request__fields
+  .signUp__circle2
+  form.page__content.signUp__content
+    .signUp__fields
       .form__field
         //если ошибки нет, .form__error пустой, иначе отступ пропадет
         input.form__textInput.textInput(type='text', placeholder='Имя и Фамилия', name='yourname', required)
@@ -25,8 +25,8 @@ section.page__section.request#request
         .form__error
           span(style='display: none;') Неправильный e-mail
 
-    .request__footer
-      .request__hint.hint
+    .signUp__footer
+      .signUp__hint.hint
         .hint__text
           | Заполните форму и&nbsp;мы&nbsp;отправим вам подробную информацию, расскажем про особенности методологии и&nbsp;поможем прикинуть бизнес-кейс
 
@@ -35,11 +35,11 @@ section.page__section.request#request
 
         .hint__speaker
 
-      button.button.button--attention.button--big.request__submit
+      button.button.button--attention.button--big.signUp__submit
         | Получить демо доступ
 
-      .request__version
+      .signUp__version
         include ../common/_version
 
-    .request__success
+    .signUp__success
       | Спасибо! мы напишем вам :)

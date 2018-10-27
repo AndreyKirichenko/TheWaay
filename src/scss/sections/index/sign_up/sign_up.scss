@@ -1,0 +1,154 @@
+.signUp {
+  background-color: #272527;
+  min-height: 480px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+
+  @media screen and (min-width: $tablet) {
+    min-height: 90vh;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &:before {
+    background-image: url('/img/g_class_bg.jpg');
+    background-position: 50% 100%;
+    background-size: cover;
+    transition: all 1s ease;
+    z-index: 0;
+  }
+
+  &:after {
+    background-image: linear-gradient(135deg, #2d2a2e, #000);
+    opacity: 0.8;
+    transition: opacity 1s ease;
+  }
+}
+
+.signUp--blurBackground {
+  &:before {
+    filter: blur(3px);
+    transform: scale(1.1, 1.1);
+  }
+
+  &:after {
+    opacity: 0.95;
+  }
+}
+
+.signUp__content {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  position: relative;
+  z-index: 2;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 200px;
+  }
+}
+
+.signUp__fields {
+  max-width: 260px;
+  width: 100%;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 80px;
+    max-width: 490px;
+  }
+}
+
+.signUp__submit {
+  margin-bottom: 10px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.signUp__footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.signUp__hint {
+  margin: 0 auto 32px;
+
+  @media screen and (min-width: $wide_desktop) {
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+    position: absolute;
+  }
+}
+
+.signUp__version {
+  text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.signUp__circle1 {
+  display: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 64px;
+  left: 230px;
+  position: absolute;
+  top: 180px;
+  width: 64px;
+  z-index: 2  ;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.signUp__circle2 {
+  display: none;
+  background-image: linear-gradient(-125deg, #D65718, #EFAC56);
+  bottom: 100px;
+  border-radius: 50%;
+  height: 120px;
+  position: absolute;
+  right: 200px;
+  width: 120px;
+  z-index: 2;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.signUp__success {
+  color: #fff;
+  display: none;
+  font-size: 20px;
+  line-height: 1em;
+  text-align: center;
+  width: 100%;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 32px;
+  }
+}

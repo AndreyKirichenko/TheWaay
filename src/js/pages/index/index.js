@@ -1,11 +1,11 @@
 import About from './_about'
-import Form from './_form'
+import SignUp from './_sign_up'
 import Slider from './_slider'
 import TopBanksAchievements from './_top_banks_achievements';
 
 function indexPage() {
   About();
-  Form();
+  SignUp();
   Slider();
   TopBanksAchievements();
 }

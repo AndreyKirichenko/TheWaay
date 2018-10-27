@@ -1,53 +1,55 @@
 import Delegate from 'dom-delegate'
 
-let burger = document.querySelector('.burger');
-let pageMenu = document.querySelector('.page__menu');
-let menuDelegate = new Delegate(document.querySelector('.page__menu'));
+class Menu {
+  constructor() {
+    this.burger = document.querySelector('.burger');
+    this.pageMenu = document.querySelector('.page__menu');
+    this.delegate = new Delegate(document.querySelector('.page'));
 
-function menu() {
-  burgerHandler();
-  menuHandler();
-  escHandler();
+    this.initEscHandler();
+    this.initBurgerHandlers();
+    this.initMenuHandler();
+  }
+
+  initEscHandler () {
+    document.addEventListener('keyup', (e) => {
+      if(e.key === "Escape") {
+        this.hide();
+      }
+    });
+  }
+
+  initBurgerHandlers() {
+    this.delegate.on('click', '.burger', ()=> this.toggle());
+    this.delegate.on('blur', '.burger', () => this.hide());
+  }
+
+  initMenuHandler() {
+    this.delegate.on('focus', '.navigation__link', ()=> this.show());
+    this.delegate.on('blur', '.navigation__link', ()=> this.hide());
+    this.delegate.on('click', '.navigation__link', ()=> this.hide());
+
+    this.delegate.on('focus', '.subscribe__input', ()=> this.show());
+    this.delegate.on('blur', '.subscribe__input', ()=> this.hide());
+
+    this.delegate.on('focus', '.subscribe__button', ()=> this.show());
+    this.delegate.on('blur', '.subscribe__button', ()=> this.hide());
+  }
+
+  show() {
+    this.burger.classList.add('burger--active');
+    this.pageMenu.classList.add('page__menu--active');
+  }
+  
+  hide() {
+    this.burger.classList.remove('burger--active');
+    this.pageMenu.classList.remove('page__menu--active');
+  }
+  
+  toggle() {
+    this.burger.classList.toggle('burger--active');
+    this.pageMenu.classList.toggle('page__menu--active');
+  }
 }
 
-function escHandler (e) {
-  document.addEventListener('keyup', function (e) {
-    if(e.key === "Escape") {
-      hide();
-    }
-  });
-}
-
-function burgerHandler() {
-  burger.addEventListener('click', toggle);
-  burger.addEventListener('blur', hide);
-}
-
-function menuHandler() {
-  menuDelegate.on('focus', '.navigation__link', show);
-  menuDelegate.on('blur', '.navigation__link', hide);
-  menuDelegate.on('click', '.navigation__link', hide);
-
-  menuDelegate.on('focus', '.subscribe__input', show);
-  menuDelegate.on('blur', '.subscribe__input', hide);
-
-  menuDelegate.on('focus', '.subscribe__button', show);
-  menuDelegate.on('blur', '.subscribe__button', hide);
-}
-
-function show() {
-  burger.classList.add('burger--active');
-  pageMenu.classList.add('page__menu--active');
-}
-
-function hide() {
-  burger.classList.remove('burger--active');
-  pageMenu.classList.remove('page__menu--active');
-}
-
-function toggle() {
-  burger.classList.toggle('burger--active');
-  pageMenu.classList.toggle('page__menu--active');
-}
-
-export default menu;
+export default Menu;
