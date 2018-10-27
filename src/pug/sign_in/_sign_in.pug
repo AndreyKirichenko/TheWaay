@@ -5,24 +5,26 @@ section.page__section.signIn#signIn
   form.page__content.signIn__content
     .signIn__fields
       .form__field
-        input.form__textInput.textInput(type='email', placeholder='Электронная почта', name='email', required)
+        input.form__textInput.textInput(autocomplete='off', type='email', placeholder='Электронная почта', name='email', required)
         .form__error
           span(style='display: none;') Неверный e-mail
 
       .form__field
-        input.form__textInput.textInput(type='password', placeholder='', name='password', required)
+        input.form__textInput.textInput(autocomplete='off', type='password', placeholder='Пароль', name='password', required)
         .form__error
           span(style='display: none;') Неверный пароль
 
+      .form__field
+        label.radio
+          input.radio__input(type='checkbox', name='member')
+          .radio__checkmark
+          .radio__title
+            | Запомнить меня
 
-      button.button.button--attention.button--big.signIn__submit
-        | Получить демо доступ
-
-      .signIn__version
-        include ../common/_version
-
-    .signIn__success
-      | Спасибо! мы напишем вам :)
+    button.button.button--attention.button--big.signIn__submit
+      | Войти
 
     .signIn__error
-      | 
+      | Пользователь с такими данными не найден.
+      br
+      | Обратитесь к своему менеджеру для решения вопроса

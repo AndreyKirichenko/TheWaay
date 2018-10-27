@@ -2,26 +2,27 @@ section.page__section.signUp#signUp
   .signUp__circle1
 
   .signUp__circle2
+
   form.page__content.signUp__content
     .signUp__fields
       .form__field
         //если ошибки нет, .form__error пустой, иначе отступ пропадет
-        input.form__textInput.textInput(type='text', placeholder='Имя и Фамилия', name='yourname', required)
+        input.form__textInput.textInput(autocomplete='off', type='text', placeholder='Имя и Фамилия', name='yourname', required)
         .form__error
           span(style='display: none;') Введите имя и фамилию
 
       .form__field
-        input.form__textInput.textInput(type='text', placeholder='Компания', name='company', required)
+        input.form__textInput.textInput(autocomplete='off', type='text', placeholder='Компания', name='company', required)
         .form__error
           span(style='display: none;') Введите компанию
 
       .form__field
-        input.form__textInput.textInput(type='text', placeholder='Телефон', name='phone', required)
+        input.form__textInput.textInput(autocomplete='off', type='text', placeholder='Телефон', name='phone', required)
         .form__error
           span(style='display: none;') Введите телефон
 
       .form__field
-        input.form__textInput.textInput(type='email', placeholder='Электронная почта', name='email', required)
+        input.form__textInput.textInput(autocomplete='off', type='email', placeholder='Электронная почта', name='email', required)
         .form__error
           span(style='display: none;') Неправильный e-mail
 

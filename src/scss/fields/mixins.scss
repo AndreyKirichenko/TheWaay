@@ -10,7 +10,13 @@
   padding: 0 8px;
   width: 100%;
 
+  &:-webkit-autofill{
+    background-color: red;
+    width: 100%;
+  }
+
   &:focus {
+    border-width: 2px;
     border-color: #fff;
   }
 
