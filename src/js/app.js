@@ -21,9 +21,15 @@ let documentReady = new Promise((resolve) => {
 documentReady.then(controller);
 
 function controller() {
-  router('/', initIndexPage);
-  router('/sign_in.html', initSignInPage);
-  router();
+  // router('/', initIndexPage);
+  // router('/sign_in.html', initSignInPage);
+  // router();
+
+  if (/sign_in.html/.test(window.location.href)) {
+    initSignInPage()
+  } else {
+    initIndexPage();
+  }
 }
 
 function initCommon() {
@@ -33,11 +39,13 @@ function initCommon() {
 }
 
 function initIndexPage() {
+  console.log(1);
   initCommon();
   IndexPage();
 }
 
 function initSignInPage() {
+  console.log(2);
   initCommon();
   SignInPage();
 }

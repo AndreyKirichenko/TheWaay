@@ -6,6 +6,11 @@ section.page__section.signIn#signIn
     .title.title--highlighted.signIn__title
       | Регистрация
 
+    .signIn__error
+      | Пользователь с такими данными не найден.
+      br
+      | Обратитесь к своему менеджеру для решения вопроса
+
     .signIn__fields
       .form__field
         input.form__input.textInput(data-mask='email', autocomplete='off', type='text', placeholder='Электронная почта', name='email', required)
@@ -27,7 +32,4 @@ section.page__section.signIn#signIn
     button.button.button--attention.button--big.signIn__submit
       | Войти
 
-    .signIn__error
-      | Пользователь с такими данными не найден.
-      br
-      | Обратитесь к своему менеджеру для решения вопроса
+
