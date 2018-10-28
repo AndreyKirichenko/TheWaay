@@ -39,13 +39,13 @@ function initCommon() {
 }
 
 function initIndexPage() {
-  console.log(1);
+
   initCommon();
   IndexPage();
 }
 
 function initSignInPage() {
-  console.log(2);
+
   initCommon();
   SignInPage();
 }
