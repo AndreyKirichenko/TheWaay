@@ -83,14 +83,14 @@
 .signIn__error {
   color: #fff;
   display: none;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1em;
   margin-bottom: 20px;
   text-align: center;
   width: 100%;
 
   @media screen and (min-width: $desktop) {
-    font-size: 32px;
+    font-size: 24px;
     margin-bottom: 40px;
   }
 }
