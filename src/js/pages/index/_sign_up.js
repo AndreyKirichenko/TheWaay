@@ -4,7 +4,7 @@ import IMask from "imask";
 
 let home;
 
-function signUp() {
+function signUp() { 
   new IMask(document.querySelector('.textInput--tel'), { mask: '+{7}(000)000-00-00'});
   home = document.querySelector('.signUp');
   blurOnFocus();
