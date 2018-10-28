@@ -3,10 +3,10 @@
 }
 
 .casesArticle__title {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 19px;
-  margin-bottom: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
 
   @media screen and (min-width: $tablet) {
     font-size: 24px;
@@ -16,10 +16,10 @@
 }
 
 .casesArticle__description {
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 16px;
+  line-height: 19px;
   font-weight: 400;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 
   @media screen and (min-width: $tablet) {
     font-size: 20px;
@@ -30,8 +30,8 @@
 
 .casesArticle__text {
   color: #7B7B7B;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 16px;
+  line-height: 19px;
 
   @media screen and (min-width: $tablet) {
     font-size: 20px;

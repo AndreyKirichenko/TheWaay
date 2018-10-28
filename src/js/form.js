@@ -20,7 +20,7 @@ class Form {
 
   init() {
     // this.form.submit(() => this.onSubmit());
-    this.form.addEventListener('submit', () => {console.log(666)});
+    this.form.addEventListener('submit', () => {});
     this.preparedfields = this.prepareFields();
   }
 

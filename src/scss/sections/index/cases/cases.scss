@@ -101,6 +101,7 @@
   text-align: left;
 
   @media screen and (min-width: $tablet) {
+    text-align: left;
     margin-bottom: 40px;
   }
 }
@@ -124,18 +125,18 @@
 }
 
 .cases__articleItem {
-  flex-basis: 46%;
-  margin-bottom: 40px;
-  width: 46%;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  flex-basis: 100%;
+  margin-bottom: 60px;
+  width: 100%;
 
   @media screen and (min-width: $tablet) {
     flex-basis: 30%;
     margin-bottom: 0;
     width: 30%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @media screen and (min-width: $desktop) {

@@ -1,6 +1,5 @@
 .signUp {
   background-color: #272527;
-  min-height: 480px;
   overflow: hidden;
   position: relative;
   z-index: 0;
@@ -51,13 +50,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   position: relative;
   z-index: 2;
 
   @media screen and (min-width: $tablet) {
-    padding-top: 200px;
+    padding-top: 100px;
   }
 }
 
