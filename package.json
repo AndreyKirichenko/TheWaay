@@ -45,6 +45,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
     "dom-delegate": "^2.2.0",
+    "imask": "^4.1.1",
     "page": "^1.11.0",
     "smooth-scroll": "^14.2.1",
     "swiper": "^4.4.1",

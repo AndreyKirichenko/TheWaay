@@ -10,14 +10,16 @@
   }
 }
 
-.form__textInput {
-  margin-bottom: 4px;
-}
-
 .form__error {
   color: #d8d8d8;
+  visibility: hidden;
   height: 12px;
   font-size: 12px;
   line-height: 1em;
+  margin-top: 4px;
   text-align: center;
+}
+
+.form__error--visible {
+  visibility: visible;
 }

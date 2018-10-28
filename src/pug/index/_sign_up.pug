@@ -4,40 +4,32 @@ section.page__section.signUp#signUp
   .signUp__circle2
 
   form.page__content.signUp__content
+    .signUp__text
+      | Заполните форму и&nbsp;мы&nbsp;отправим вам подробную информацию, расскажем про&nbsp;особенности методологии и&nbsp;поможем прикинуть бизнес-кейс
+
     .signUp__fields
       .form__field
-        //если ошибки нет, .form__error пустой, иначе отступ пропадет
-        input.form__textInput.textInput(autocomplete='off', type='text', placeholder='Имя и Фамилия', name='yourname', required)
+        input.form__input.textInput(autocomplete='off', type='text', placeholder='Имя и Фамилия', name='yourname', required)
         .form__error
           span(style='display: none;') Введите имя и фамилию
 
       .form__field
-        input.form__textInput.textInput(autocomplete='off', type='text', placeholder='Компания', name='company', required)
+        input.form__input.textInput(autocomplete='off', type='text', placeholder='Компания', name='company', required)
         .form__error
           span(style='display: none;') Введите компанию
 
       .form__field
-        input.form__textInput.textInput(autocomplete='off', type='text', placeholder='Телефон', name='phone', required)
+        input.form__input.textInput(autocomplete='off', type='text', placeholder='Телефон', name='phone', required)
         .form__error
           span(style='display: none;') Введите телефон
 
       .form__field
-        input.form__textInput.textInput(autocomplete='off', type='email', placeholder='Электронная почта', name='email', required)
+        input.form__input.textInput(autocomplete='off', type='email', placeholder='Электронная почта', name='email', required)
         .form__error
           span(style='display: none;') Неправильный e-mail
 
-    .signUp__footer
-      .signUp__hint.hint
-        .hint__text
-          | Заполните форму и&nbsp;мы&nbsp;отправим вам подробную информацию, расскажем про особенности методологии и&nbsp;поможем прикинуть бизнес-кейс
-
-        svg.svg.hint__line
-          use(xlink:href='#svgSpeakerLine')
-
-        .hint__speaker
-
-      button.button.button--attention.button--big.signUp__submit
-        | Получить демо доступ
+    button.button.button--attention.button--big.signUp__submit
+      | Получить демо доступ
 
       .signUp__version
         include ../common/_version

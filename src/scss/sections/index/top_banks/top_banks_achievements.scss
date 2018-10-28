@@ -7,8 +7,8 @@
 
 .topBanksAchievements__item {
   color: #fff;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 20px;
+  line-height: 24px;
   opacity: 0;
   position: absolute;
   text-align: center;
@@ -17,8 +17,8 @@
 
 
   @media screen and (min-width: $tablet) {
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 32px;
+    line-height: 36px;
   }
 }
 

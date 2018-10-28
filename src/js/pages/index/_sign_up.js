@@ -34,12 +34,12 @@ $('.signUp__content').submit(function (e){
     success: function (result) {
       if (result == 'fields') {
         $('.signUp__content .form__error span').fadeIn();
-        $('.signUp__content input.form__textInput').addClass('textInput--error');
+        $('.signUp__content input.form__input').addClass('textInput--error');
         return false;
       }
       else if (result == 'ok') {
         $('.signUp__content .form__error span').fadeOut();
-        $('.signUp__content input.form__textInput').removeClass('textInput--error');
+        $('.signUp__content input.form__input').removeClass('textInput--error');
 
         $('.signUp__fields').fadeOut();
         $('.signUp__footer').fadeOut();

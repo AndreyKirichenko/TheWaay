@@ -61,6 +61,27 @@
   }
 }
 
+.signUp__text {
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 400px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 40px;
+    max-width: 80%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 60px;
+    max-width: 75%;
+  }
+}
+
 .signUp__fields {
   max-width: 260px;
   width: 100%;

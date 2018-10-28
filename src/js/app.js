@@ -10,6 +10,8 @@ import Navigation from './menu';
 
 import IndexPage from './pages/index/index';
 
+import SignInPage from './pages/sign_in/sign_in';
+
 let documentReady = new Promise((resolve) => {
   document.addEventListener('DOMContentLoaded', function(event) {
     resolve();
@@ -31,13 +33,11 @@ function initCommon() {
 }
 
 function initIndexPage() {
-  console.log('initIndexPage!!!');
-
   initCommon();
   IndexPage();
 }
 
 function initSignInPage() {
-  console.log('initSignIn!!!');
   initCommon();
+  SignInPage();
 }

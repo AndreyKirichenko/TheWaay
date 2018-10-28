@@ -2,21 +2,24 @@ section.page__section.signIn#signIn
   .signIn__circle1
 
   .signIn__circle2
-  form.page__content.signIn__content
+  .page__content.signIn__content()
+    .title.title--highlighted.signIn__title
+      | Регистрация
+
     .signIn__fields
       .form__field
-        input.form__textInput.textInput(autocomplete='off', type='email', placeholder='Электронная почта', name='email', required)
+        input.form__input.textInput(data-mask='email', autocomplete='off', type='text', placeholder='Электронная почта', name='email', required)
         .form__error
-          span(style='display: none;') Неверный e-mail
+          span Неверный e-mail
 
       .form__field
-        input.form__textInput.textInput(autocomplete='off', type='password', placeholder='Пароль', name='password', required)
+        input.form__input.textInput(autocomplete='off', type='password', placeholder='Пароль', name='password', required)
         .form__error
-          span(style='display: none;') Неверный пароль
+          span Неверный пароль
 
       .form__field
         label.radio
-          input.radio__input(type='checkbox', name='member')
+          input.form__input.radio__input(type='checkbox', name='member')
           .radio__checkmark
           .radio__title
             | Запомнить меня

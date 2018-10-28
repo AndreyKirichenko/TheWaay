@@ -10,6 +10,14 @@
   z-index: 0;
 }
 
+.signIn__title {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 40px;
+  }
+}
+
 .signIn__content {
   align-items: center;
   box-sizing: border-box;
@@ -24,7 +32,7 @@
 .signIn__fields {
   max-width: 260px;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 110px;
@@ -77,10 +85,12 @@
   display: none;
   font-size: 20px;
   line-height: 1em;
+  margin-top: 20px;
   text-align: center;
   width: 100%;
 
   @media screen and (min-width: $desktop) {
     font-size: 32px;
+    margin-top: 40px;
   }
 }
