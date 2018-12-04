@@ -45,8 +45,16 @@ let conf = {
       template : './src/pug/index.pug'
     }),
     new HtmlWebpackPlugin({
+      filename: 'eng.html',
+      template : './src/pug/index_eng.pug'
+    }),
+    new HtmlWebpackPlugin({
       filename: 'sign_in.html',
       template : './src/pug/sign_in.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'sign_in_eng.html',
+      template : './src/pug/sign_in_eng.pug'
     }),
     new CopyWebpackPlugin([
       { from: 'src/img/', to: 'img/', force: true },

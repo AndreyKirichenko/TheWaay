@@ -1,0 +1,38 @@
+section.page__section.signUp#signUp
+  .signUp__circle1
+
+  .signUp__circle2
+
+  form.page__content.signUp__content
+    .signUp__text
+      | Fill in the form and we will send you detailed information, tell you about the features of the methodology and help you to prepare an estimate of the business case.
+
+    .signUp__fields
+      .form__field
+        input.form__input.textInput(autocomplete='off', type='text', placeholder='Имя и Фамилия', name='yourname', required)
+        .form__error
+          span(style='display: none;') Введите имя и фамилию
+
+      .form__field
+        input.form__input.textInput(autocomplete='off', type='text', placeholder='Компания', name='company', required)
+        .form__error
+          span(style='display: none;') Введите компанию
+
+      .form__field
+        input.form__input.textInput.textInput--tel(autocomplete='off', type='text', placeholder='Телефон', name='phone', required)
+        .form__error
+          span(style='display: none;') Введите телефон
+
+      .form__field
+        input.form__input.textInput(autocomplete='off', type='email', placeholder='Электронная почта', name='email', required)
+        .form__error
+          span(style='display: none;') Неправильный e-mail
+
+    button.button.button--attention.button--big.signUp__submit
+      | Получить демо доступ
+
+      .signUp__version
+        include ../common/_version
+
+    .signUp__success
+      | Спасибо! мы напишем вам :)

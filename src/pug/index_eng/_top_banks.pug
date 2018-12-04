@@ -1,0 +1,44 @@
+section.page__section.topBanks#topBanks
+  .page__content.topBanks__content
+    h1.topBanks__title.title
+      span.title__highlighted
+        | TRUSTED BY
+
+    ul.topBanks__list
+      li.topBanks__item
+        svg.svg.topBanks__logo.topBanks__logo--raiffeisenBank
+          use(xlink:href='#svgRaiffeisenBank')
+
+          .topBanks__name
+            | Raiffeisen
+
+      li.topBanks__item
+        svg.svg.topBanks__logo.topBanks__logo--creditEuroeBank
+          use(xlink:href='#svgCreditEuroeBank')
+
+          .topBanks__name
+            | Credit Europe Bank
+
+      li.topBanks__item
+        svg.svg.topBanks__logo.topBanks__logo--bankStPetersburg
+          use(xlink:href='#svgBankStPetersburg')
+
+          .topBanks__name
+            | Rosbank Societe
+            br
+            | Generale Group
+
+
+    .topBanks__achievements
+      ul.topBanksAchievements
+        li.topBanksAchievements__item
+          | 120M Transactions Analyzed
+
+        li.topBanksAchievements__item
+          | 10M clients are profiled
+
+        li.topBanksAchievements__item
+          | 1M Lifestyle tips given
+
+    a.topBanks__more.button.button--big(href='#cases')
+      | Подробнее о кейсах

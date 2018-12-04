@@ -1,0 +1,37 @@
+section.page__section.signIn#signIn
+  .signIn__circle1
+
+  .signIn__circle2
+  .page__content.signIn__content
+    h1.title.title--highlighted.signIn__title
+      | Вход в личный кабинет
+
+    .signIn__error
+      | Пользователь с такими данными не найден.
+      br
+      | Обратитесь к своему менеджеру для решения вопроса
+
+    .signIn__fields
+      .form__field
+        input.form__input.textInput(data-mask='email', autocomplete='off', type='text', placeholder='E-mail', name='email', required)
+        .form__error
+          span Неверный e-mail
+
+      .form__field
+        input.form__input.textInput(autocomplete='off', type='password', placeholder='Password', name='password', required)
+        .form__error
+          span Неверный пароль
+
+      .form__field
+        label.radio
+          input.form__input.radio__input(type='checkbox', name='member')
+          .radio__checkmark
+          .radio__title
+            | Remember me
+
+    button.button.button--attention.button--big.signIn__submit
+      | Sign in
+
+    a.button.button--attention.button--big.signIn__demo(href='/#sign_up')
+      | Request Demo
+

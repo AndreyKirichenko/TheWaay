@@ -1,0 +1,27 @@
+section.page__section.about#about
+  .page__content
+    .about__content
+      p.about__text
+        | Our&nbsp;system of personalization of Bank customer relationship has 3 features: it gives the customer a deep understanding of the market, it can automatically create personal communications based on the deepest profile and, third of all, it works in the cloud so you can try it right now.
+
+      .about__telephoneOuter
+        a.about__telephone(href='https://vimeo.com/303664028', target='_blank ')
+          .about__telephoneInnerContainer
+            svg.svg.about__playIcon
+              use(xlink:href='#svgPlay')
+
+      .about__footer
+        a.button.button--attention.button--big.about__demo(href='#signUp')
+          | Try Demo
+
+        //.about__or
+        //  | или
+        //
+        //a.about__more(href='#')
+        //  | Подробное описание
+
+        .about__version
+          include ../common/_version
+
+        .about__subscribe
+          include _subscribe
