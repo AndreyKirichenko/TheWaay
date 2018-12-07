@@ -48,7 +48,8 @@
 .topBanks__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto  ;
+  margin: 0 auto;
+  width: 100%;
   max-width: 840px;
 }
 
@@ -122,6 +123,16 @@
 }
 
 .topBanks__logo--bankOtkritie {
+  height: 30px;
+  width: 30px;
+
+  @media screen and (min-width: $tablet) {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.topBanks__logo--rosbank {
   height: 30px;
   width: 30px;
 
