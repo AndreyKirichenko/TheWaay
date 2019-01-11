@@ -9,27 +9,27 @@ section.page__section.signUp#signUp
 
     .signUp__fields
       .form__field
-        input.form__input.textInput(autocomplete='off', type='text', placeholder='Имя и Фамилия', name='yourname', required)
+        input.form__input.textInput(autocomplete='off', type='text', placeholder='Name', name='yourname', required)
         .form__error
-          span(style='display: none;') Введите имя и фамилию
+          span(style='display: none;') Enter your name
 
       .form__field
-        input.form__input.textInput(autocomplete='off', type='text', placeholder='Компания', name='company', required)
+        input.form__input.textInput(autocomplete='off', type='text', placeholder='Company', name='company', required)
         .form__error
-          span(style='display: none;') Введите компанию
+          span(style='display: none;') Enter company name
 
       .form__field
-        input.form__input.textInput.textInput--tel(autocomplete='off', type='text', placeholder='Телефон', name='phone', required)
+        input.form__input.textInput.textInput--tel(autocomplete='off', type='text', placeholder='Phone', name='phone', required)
         .form__error
-          span(style='display: none;') Введите телефон
+          span(style='display: none;') Enter your phone
 
       .form__field
-        input.form__input.textInput(autocomplete='off', type='email', placeholder='Электронная почта', name='email', required)
+        input.form__input.textInput(autocomplete='off', type='email', placeholder='E-mail', name='email', required)
         .form__error
-          span(style='display: none;') Неправильный e-mail
+          span(style='display: none;') Wrong e-mail
 
     button.button.button--attention.button--big.signUp__submit
-      | Получить демо доступ
+      | Request Demo
 
       .signUp__version
         include ../common/_version
