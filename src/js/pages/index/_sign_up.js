@@ -5,7 +5,17 @@ import IMask from "imask";
 let home;
 
 function signUp() { 
-  new IMask(document.querySelector('.textInput--tel'), { mask: '+{7}(000)000-00-00'});
+  new IMask(document.querySelector('.textInput--tel'), {
+    // mask: '+0000-000-00-00'
+    mask: '+code-000-00-00',
+    blocks: {
+      code: {
+        mask: Number,
+        min: 0,
+        max: 99999,
+      }
+    }
+  });
   home = document.querySelector('.signUp');
   blurOnFocus();
 }
