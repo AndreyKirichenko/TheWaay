@@ -2,7 +2,9 @@
   background-color: #000511;
   background-image: linear-gradient(160deg, #2d2a2e, #000511);
   position: relative;
+}
 
+.cases--rus {
   &:before {
     background-image: url('/img/cases.png');
     background-position: 50% 135px;
@@ -14,9 +16,32 @@
     width: 100%;
     z-index: 0;
 
-    @media (min-device-pixel-ratio: 2) {
-      background-image: url('/img/cases_x2.png');
+    //@media (min-device-pixel-ratio: 2) {
+    //  background-image: url('/img/cases_x2.png');
+    //}
+
+    @media screen and (min-width: $tablet) {
+      background-position: 55% 270px;
+      background-size: 1547px;
     }
+  }
+}
+
+.cases--eng {
+  &:before {
+    background-image: url('/img/cases_eng.png');
+    background-position: 50% 135px;
+    background-repeat: no-repeat;
+    background-size: 774px;
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+
+    //@media (min-device-pixel-ratio: 2) {
+    //  background-image: url('/img/cases_x2.png');
+    //}
 
     @media screen and (min-width: $tablet) {
       background-position: 55% 270px;
